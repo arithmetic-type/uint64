@@ -1,5 +1,5 @@
 {
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "64-bit unsigned integer arithmetic code bricks for JavaScript",
 	"dependencies": {},
 	"license": "AGPL-3.0",
