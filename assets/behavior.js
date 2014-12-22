@@ -93,6 +93,46 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
+        "sourcePath": "/home/aureooms/dev/js/js-uint64/js/src/compare.js",
+        "projectPath": "js/src/compare.js",
+        "targetPath": "compare",
+        "pageTitle": "compare",
+        "title": "compare"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-uint64/js/src/limits.js",
+        "projectPath": "js/src/limits.js",
+        "targetPath": "limits",
+        "pageTitle": "limits",
+        "title": "limits"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
         "sourcePath": "/home/aureooms/dev/js/js-uint64/js/src/not64.js",
         "projectPath": "js/src/not64.js",
         "targetPath": "not64",
