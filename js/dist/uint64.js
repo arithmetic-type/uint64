@@ -42,6 +42,25 @@ var big64 = function ( a , o ) {
 
 exports.big64 = big64 ;
 
+/* js/src/compare.js */
+
+var compare = function ( a , b ) {
+
+	return a[0] < b[0] ? -1 : a[0] > b[0] ? 1 :
+	       a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0 ;
+
+} ;
+
+exports.compare = compare ;
+
+/* js/src/limits.js */
+
+/** 0 */
+exports.min = [ 0x00000000 , 0x00000000 ] ;
+
+/** 2^64 - 1 */
+exports.max = [ 0xffffffff , 0xffffffff ] ;
+
 /* js/src/not64.js */
 
 var not64 = function ( a ) {
