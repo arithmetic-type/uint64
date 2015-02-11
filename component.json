@@ -1,6 +1,6 @@
 {
 	"description": "64-bit unsigned integer arithmetic code bricks for JavaScript",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"repo": "aureooms/js-uint64",
 	"scripts": [
 		"js/dist/uint64.js"
