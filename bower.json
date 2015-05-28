@@ -1,19 +1,21 @@
 {
-	"version": "0.0.5",
-	"description": "64-bit unsigned integer arithmetic code bricks for JavaScript",
-	"ignore": [
-		"js/index.js",
-		"js/src",
-		"test",
-		"pkg.json",
-		"package.json",
-		".groc.json",
-		".travis.yml",
-		".gitignore",
-		"README.md"
-	],
-	"name": "aureooms-js-uint64",
-	"homepage": "http://aureooms.github.io/js-uint64/",
-	"license": "AGPL-3.0",
-	"main": "js/dist/uint64.js"
+  "version": "0.0.5",
+  "description": "64-bit unsigned integer arithmetic code bricks for JavaScript",
+  "ignore": [
+    "js/index.js",
+    "js/src",
+    "test",
+    "pkg.json",
+    "package.json",
+    ".groc.json",
+    ".travis.yml",
+    ".gitignore",
+    "README.md",
+    "inch.json",
+    ".codeclimate.yml"
+  ],
+  "name": "aureooms-js-uint64",
+  "homepage": "http://aureooms.github.io/js-uint64/",
+  "license": "AGPL-3.0",
+  "main": "js/dist/uint64.js"
 }
