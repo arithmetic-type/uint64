@@ -10,7 +10,7 @@
 		"test": "./node_modules/.bin/aureooms-node-package-test"
 	},
 	"devDependencies": {
-		"aureooms-node-package": "^1.1.3"
+		"aureooms-node-package": "^6.0.1"
 	},
 	"author": "aureooms",
 	"bugs": {
