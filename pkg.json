@@ -11,7 +11,7 @@
 			"uint64.js"
 		]
 	},
-	"ns": "uint64",
+	"name": "uint64",
 	"debug": false,
 	"out": "js/dist/"
 }
