@@ -16,7 +16,7 @@
 	"bugs": {
 		"url": "https://github.com/aureooms/js-uint64/issues"
 	},
-	"name": "aureooms-js-uint64",
+	"name": "@aureooms/js-uint64",
 	"repository": {
 		"url": "https://github.com/aureooms/js-uint64.git",
 		"type": "git"
