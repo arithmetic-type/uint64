@@ -1,34 +1,59 @@
 {
-	"version": "0.0.5",
-	"description": "64-bit unsigned integer arithmetic code bricks for JavaScript",
-	"dependencies": {},
-	"license": "AGPL-3.0",
-	"homepage": "http://aureooms.github.io/js-uint64/",
-	"scripts": {
-		"build": "./node_modules/.bin/aureooms-node-package-build",
-		"doc": "./node_modules/.bin/groc",
-		"test": "./node_modules/.bin/aureooms-node-package-test"
-	},
-	"devDependencies": {
-		"aureooms-node-package": "^7.0.0"
-	},
-	"author": "aureooms",
-	"bugs": {
-		"url": "https://github.com/aureooms/js-uint64/issues"
-	},
-	"name": "aureooms-js-uint64",
-	"repository": {
-		"url": "https://github.com/aureooms/js-uint64.git",
-		"type": "git"
-	},
-	"keywords": [
-		"64",
-		"arithmetic",
-		"bricks",
-		"integer",
-		"javascript",
-		"js",
-		"unsigned"
-	],
-	"main": "js/dist/uint64.js"
+  "name": "@aureooms/js-uint64",
+  "description": "64-bit unsigned integer arithmetic and locic operators for JavaScript",
+  "version": "0.0.5",
+  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
+  "ava": {
+    "require": [
+      "babel-polyfill",
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/aureooms/js-uint64/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "babel-cli": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.1.8",
+    "codeclimate-test-reporter": "^0.4.1",
+    "coveralls": "^2.11.16",
+    "esdoc": "^0.5.2",
+    "nyc": "^10.1.2"
+  },
+  "homepage": "http://aureooms.github.io/js-uint64/",
+  "keywords": [
+    "64",
+    "arithmetic",
+    "bit",
+    "integer",
+    "javascript",
+    "logic",
+    "uint64",
+    "unsigned"
+  ],
+  "license": "AGPL-3.0",
+  "main": "lib/index.js",
+  "repository": {
+    "url": "https://github.com/aureooms/js-uint64.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "prepublish": "npm run build",
+    "test": "ava ./test/src --concurrency 8"
+  }
 }
