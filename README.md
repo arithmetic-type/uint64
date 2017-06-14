@@ -1,8 +1,15 @@
-[js-uint64](http://aureooms.github.io/js-uint64)
+[@aureooms/js-uint64](https://aureooms.github.io/js-uint64)
 ==
 
 64-bit unsigned integer arithmetic and logic operators for JavaScript.
 Implemented using arrays of two signed 32-bit integers.
+
+Used in [@aureooms/js-hash](https://github.com/aureooms/js-hash).
+For a 32-bit version, see [@aureooms/js-uint32](https://github.com/aureooms/js-uint32).
+
+```js
+rot64(2, 1); 1
+```
 
 [![License](https://img.shields.io/github/license/aureooms/js-uint64.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-uint64/master/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@aureooms/js-uint64.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-uint64)
