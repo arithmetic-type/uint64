@@ -1,7 +1,7 @@
 {
   "name": "@aureooms/js-uint64",
   "description": "64-bit unsigned integer arithmetic and locic operators for JavaScript",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "ava": {
     "require": [
