@@ -48,9 +48,21 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "@aureooms/js-uint64/src/rot64.js~rot64",
-    "function/index.html#static-function-rot64",
-    "<span>rot64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/rot64.js</span>",
+    "@aureooms/js-uint64/src/rotl64.js~rotl64",
+    "function/index.html#static-function-rotl64",
+    "<span>rotl64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/rotl64.js</span>",
+    "function"
+  ],
+  [
+    "@aureooms/js-uint64/src/rotr64.js~rotr64",
+    "function/index.html#static-function-rotr64",
+    "<span>rotr64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/rotr64.js</span>",
+    "function"
+  ],
+  [
+    "@aureooms/js-uint64/src/shl64.js~shl64",
+    "function/index.html#static-function-shl64",
+    "<span>shl64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/shl64.js</span>",
     "function"
   ],
   [
@@ -444,9 +456,21 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/rot64.js",
-    "file/src/rot64.js.html",
-    "src/rot64.js",
+    "src/rotl64.js",
+    "file/src/rotl64.js.html",
+    "src/rotl64.js",
+    "file"
+  ],
+  [
+    "src/rotr64.js",
+    "file/src/rotr64.js.html",
+    "src/rotr64.js",
+    "file"
+  ],
+  [
+    "src/shl64.js",
+    "file/src/shl64.js.html",
+    "src/shl64.js",
     "file"
   ],
   [

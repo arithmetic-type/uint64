@@ -1,7 +1,7 @@
 {
-  "coverage": "27.27%",
-  "expectCount": 11,
-  "actualCount": 3,
+  "coverage": "53.84%",
+  "expectCount": 13,
+  "actualCount": 7,
   "files": {
     "src/add64.js": {
       "expectCount": 1,
@@ -19,10 +19,8 @@
     },
     "src/big64.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        1
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/compare.js": {
       "expectCount": 1,
@@ -50,17 +48,25 @@
         1
       ]
     },
-    "src/rot64.js": {
+    "src/rotl64.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/rotr64.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/shl64.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
     },
     "src/shr64.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        1
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/xor64.js": {
       "expectCount": 1,
