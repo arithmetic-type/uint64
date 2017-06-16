@@ -1,14 +1,14 @@
 import test from 'ava';
 
-import { rot64 , get64 } from '../../src' ;
+import { rotr64 , get64 } from '../../src' ;
 
 function macro (t, a, s, expected) {
 	a = get64(...a);
 	expected = get64(...expected);
-	t.deepEqual(rot64(a, s), expected);
+	t.deepEqual(rotr64(a, s), expected);
 }
 
-macro.title = (providedTitle, a, s, expected) => `${providedTitle} ${a} rot ${s} === ${expected}`.trim();
+macro.title = (providedTitle, a, s, expected) => `${providedTitle} ${a} rotr ${s} === ${expected}`.trim();
 
 test(macro, [0x00000000, 0x00000000],  0, [0x00000000, 0x00000000]);
 test(macro, [0x00000000, 0x00000000], 53, [0x00000000, 0x00000000]);

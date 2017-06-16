@@ -1,11 +1,16 @@
 
 /**
- * Right rotate for 64-bit unsigned integers
+ * Right rotate a 64-bit unsigned integer given as a pair of two 32-bit signed
+ * integers in big endian order.
  *
- *  - used in the sha2 family
+ * NB: used in the sha2 family
+ *
+ * @param {Array} a
+ * @param {Number} s `0 <= s <= 64`
+ * @returns {Array}
  */
 
-export function rot64 (a, s) {
+export function rotr64 (a, s) {
 	if ( s === 0 || s === 64 ) {
 		return [a[0],a[1]];
 	}
