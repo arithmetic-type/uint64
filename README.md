@@ -8,7 +8,11 @@ Used in [@aureooms/js-hash](https://github.com/aureooms/js-hash).
 For the 32-bit counterpart, see [@aureooms/js-uint32](https://github.com/aureooms/js-uint32).
 
 ```js
-rotr64([0, 1], 1); [ 2147483648 , 0 ]
+let a = get64(0, 1) ;
+rotr64(a, 1); // [-1, 0]
+
+let x = get64(0xFFFFFFFF, 0xFFFFFFFF);
+add64(x, x); // [-1, -2]
 ```
 
 [![License](https://img.shields.io/github/license/aureooms/js-uint64.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-uint64/master/LICENSE)
