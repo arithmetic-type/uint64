@@ -2,10 +2,11 @@ import test from 'ava';
 
 import { compare , get64 } from '../../src' ;
 
-function macro (t, a, b, expected) {
-	a = get64(...a);
-	b = get64(...b);
-	t.deepEqual(compare(a, b), expected);
+function macro (t, A, B, expected) {
+	const a = get64(...A);
+	const b = get64(...B);
+	t.deepEqual(compare(a, b), +expected, 'compare(a, b)');
+	t.deepEqual(compare(b, a), -expected, 'compare(b, a)');
 }
 
 macro.title = (providedTitle, a, b, expected) => `${providedTitle} compare(${a}, ${b}) === ${expected}`.trim();

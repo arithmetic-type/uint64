@@ -1,9 +1,11 @@
 import test from 'ava';
 
-import { min , max } from '../../src' ;
+import { min , max , get64 } from '../../src' ;
 
 function macro (t, input, expected) {
-	t.deepEqual(input, expected);
+	const a = get64(...input);
+	const b = get64(...expected);
+	t.deepEqual(a, b);
 }
 
 macro.title = (providedTitle, input, expected) => `${providedTitle} ${input} === ${expected}`.trim();
