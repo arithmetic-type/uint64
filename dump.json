@@ -279,7 +279,7 @@
     "__docId__": 11,
     "kind": "file",
     "name": "src/limits.js",
-    "content": "\n/** 0 */\nexport const min = [ 0x00000000 >>> 0 , 0x00000000 >>> 0 ] ;\n\n/** 2^64 - 1 */\nexport const max = [ 0xFFFFFFFF >>> 0 , 0xFFFFFFFF >>> 0 ] ;\n",
+    "content": "import { get64 } from './get64' ;\n\n/** 0 */\nexport const min = get64( 0x00000000 , 0x00000000 ) ;\n\n/** 2^64 - 1 */\nexport const max = get64( 0xFFFFFFFF , 0xFFFFFFFF ) ;\n",
     "static": true,
     "longname": "src/limits.js",
     "access": null,
@@ -298,10 +298,10 @@
     "importPath": "@aureooms/js-uint64/src/limits.js",
     "importStyle": "{min}",
     "description": "0",
-    "lineNumber": 3,
+    "lineNumber": 4,
     "type": {
       "types": [
-        "undefined[]"
+        "*"
       ]
     }
   },
@@ -317,10 +317,10 @@
     "importPath": "@aureooms/js-uint64/src/limits.js",
     "importStyle": "{max}",
     "description": "2^64 - 1",
-    "lineNumber": 6,
+    "lineNumber": 7,
     "type": {
       "types": [
-        "undefined[]"
+        "*"
       ]
     }
   },
@@ -370,7 +370,7 @@
     "__docId__": 16,
     "kind": "file",
     "name": "src/rotl64.js",
-    "content": "\n/**\n * Left rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `0 <= s <= 64`\n * @returns {Array}\n */\nexport function rotl64 (a, s) {\n\treturn rotr64(a, 64 - s);\n}\n",
+    "content": "import { rotr64 } from './rotr64' ;\n/**\n * Left rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `0 <= s <= 64`\n * @returns {Array}\n */\nexport function rotl64 (a, s) {\n\treturn rotr64(a, 64 - s);\n}\n",
     "static": true,
     "longname": "src/rotl64.js",
     "access": null,

@@ -52,12 +52,13 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/limits.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { get64 } from &apos;./get64&apos; ;
+
 /** 0 */
-export const min = [ 0x00000000 &gt;&gt;&gt; 0 , 0x00000000 &gt;&gt;&gt; 0 ] ;
+export const min = get64( 0x00000000 , 0x00000000 ) ;
 
 /** 2^64 - 1 */
-export const max = [ 0xFFFFFFFF &gt;&gt;&gt; 0 , 0xFFFFFFFF &gt;&gt;&gt; 0 ] ;
+export const max = get64( 0xFFFFFFFF , 0xFFFFFFFF ) ;
 </code></pre>
 
 </div>
