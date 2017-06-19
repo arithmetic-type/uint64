@@ -56,7 +56,11 @@
 Implemented using big endian arrays of two signed 32-bit integers.</p>
 <p>Used in <a href="https://github.com/aureooms/js-hash">@aureooms/js-hash</a>.
 For the 32-bit counterpart, see <a href="https://github.com/aureooms/js-uint32">@aureooms/js-uint32</a>.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">rotr64([0, 1], 1); [ 2147483648 , 0 ]</code>
+<pre><code class="lang-js"><code class="source-code prettyprint">let a = get64(0, 1) ;
+rotr64(a, 1); // [-1, 0]
+
+let x = get64(0xFFFFFFFF, 0xFFFFFFFF);
+add64(x, x); // [-1, -2]</code>
 </code></pre>
 <p><a href="https://raw.githubusercontent.com/aureooms/js-uint64/master/LICENSE"><img src="https://img.shields.io/github/license/aureooms/js-uint64.svg?style=flat" alt="License"></a>
 <a href="https://www.npmjs.org/package/@aureooms/js-uint64"><img src="https://img.shields.io/npm/v/@aureooms/js-uint64.svg?style=flat" alt="NPM version"></a>
