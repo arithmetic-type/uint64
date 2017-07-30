@@ -30,7 +30,7 @@
     "babel-preset-env": "^1.5.2",
     "codeclimate-test-reporter": "^0.5.0",
     "coveralls": "^2.13.1",
-    "esdoc": "^0.5.2",
+    "esdoc": "^1.0.1",
     "nyc": "^11.0.2"
   },
   "homepage": "http://aureooms.github.io/js-uint64/",
