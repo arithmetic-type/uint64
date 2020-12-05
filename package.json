@@ -79,7 +79,7 @@
   "dependencies": {},
   "devDependencies": {
     "ava": "^3.13.0",
-    "coveralls": "^2.13.1",
+    "coveralls": "^3.1.0",
     "esdoc": "^1.1.0",
     "nyc": "^15.1.0",
     "@babel/cli": "7.12.8",
@@ -92,7 +92,7 @@
     "esdoc-inject-script-plugin": "1.0.0",
     "esdoc-inject-style-plugin": "1.0.0",
     "esdoc-standard-plugin": "1.0.0",
-    "np": "6.5.0",
+    "np": "7.0.0",
     "power-assert": "1.6.1"
   },
   "homepage": "http://aureooms.github.io/js-uint64/",
