@@ -129,5 +129,6 @@
   },
   "files": [
     "lib"
-  ]
+  ],
+  "sideEffects": false
 }
