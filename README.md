@@ -1,4 +1,4 @@
-[@aureooms/js-uint64](https://aureooms.github.io/js-uint64)
+:rabbit: [@aureooms/js-uint64](https://aureooms.github.io/js-uint64)
 ==
 
 64-bit unsigned integer arithmetic and logic operators for JavaScript.
