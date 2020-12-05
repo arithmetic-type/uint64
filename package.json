@@ -7,7 +7,12 @@
     "require": [
       "regenerator-runtime/runtime",
       "@babel/register"
-    ]
+    ],
+    "files": [
+      "test/src/**/*"
+    ],
+    "timeout": "1m",
+    "concurrency": 8
   },
   "babel": {
     "presets": [
@@ -73,7 +78,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "ava": "^0.19.1",
+    "ava": "^3.13.0",
     "babel-cli": "^6.24.1",
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.5.2",
@@ -115,7 +120,8 @@
     "build": "babel src -d lib",
     "cover": "nyc --reporter=lcov npm test",
     "prepublish": "npm run build",
-    "test": "ava ./test/src --concurrency 8",
-    "esdoc": "esdoc"
+    "test": "ava",
+    "esdoc": "esdoc",
+    "lint": "true"
   }
 }
