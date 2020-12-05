@@ -15,7 +15,7 @@ let x = get64(0xFFFFFFFF, 0xFFFFFFFF);
 add64(x, x); // [-1, -2]
 ```
 
-[![License](https://img.shields.io/github/license/aureooms/js-uint64.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-uint64/master/LICENSE)
+[![License](https://img.shields.io/github/license/aureooms/js-uint64.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-uint64/main/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@aureooms/js-uint64.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-uint64)
 [![Build Status](https://img.shields.io/travis/aureooms/js-uint64.svg?style=flat)](https://travis-ci.org/aureooms/js-uint64)
 [![Coverage Status](https://img.shields.io/coveralls/aureooms/js-uint64.svg?style=flat)](https://coveralls.io/r/aureooms/js-uint64)
