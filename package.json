@@ -78,23 +78,26 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "ava": "^3.13.0",
-    "coveralls": "^3.1.0",
-    "esdoc": "^1.1.0",
-    "nyc": "^15.1.0",
     "@babel/cli": "7.12.8",
     "@babel/core": "7.12.9",
     "@babel/preset-env": "7.12.7",
     "@babel/register": "7.12.1",
+    "ava": "^3.13.0",
     "babel-plugin-transform-remove-console": "6.9.4",
     "babel-plugin-unassert": "3.0.1",
     "babel-preset-power-assert": "3.0.0",
+    "coveralls": "^3.1.0",
+    "esdoc": "^1.1.0",
     "esdoc-inject-script-plugin": "1.0.0",
     "esdoc-inject-style-plugin": "1.0.0",
     "esdoc-standard-plugin": "1.0.0",
     "np": "7.0.0",
+    "nyc": "^15.1.0",
     "power-assert": "1.6.1"
   },
+  "files": [
+    "lib"
+  ],
   "homepage": "http://aureooms.github.io/js-uint64/",
   "keywords": [
     "64",
@@ -115,16 +118,13 @@
   "scripts": {
     "build": "babel src -d lib",
     "cover": "nyc --reporter=lcov npm test",
-    "test": "ava",
+    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
     "esdoc": "esdoc",
     "lint": "true",
     "prepare": "npm run build",
-    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
-    "travis": "npm run lint && npm run cover",
-    "release": "np"
+    "release": "np",
+    "test": "ava",
+    "travis": "npm run lint && npm run cover"
   },
-  "files": [
-    "lib"
-  ],
   "sideEffects": false
 }
