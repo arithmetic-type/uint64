@@ -123,5 +123,8 @@
     "esdoc": "esdoc",
     "lint": "true",
     "prepare": "npm run build"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }
