@@ -6,7 +6,7 @@ function macro (t, A, B, expected) {
 	const a = get64(...A);
 	const b = get64(...B);
 	t.deepEqual(compare(a, b), +expected, 'compare(a, b)');
-	t.deepEqual(compare(b, a), -expected, 'compare(b, a)');
+	t.deepEqual(compare(b, a), expected === 0 ? expected : -expected, 'compare(b, a)');
 }
 
 macro.title = (providedTitle, a, b, expected) => `${providedTitle} compare(${a}, ${b}) === ${expected}`.trim();
