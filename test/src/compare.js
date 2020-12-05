@@ -9,7 +9,7 @@ function macro (t, A, B, expected) {
 	t.deepEqual(compare(b, a), expected === 0 ? expected : -expected, 'compare(b, a)');
 }
 
-macro.title = (providedTitle, a, b, expected) => `${providedTitle} compare(${a}, ${b}) === ${expected}`.trim();
+macro.title = (providedTitle, a, b, expected) => `${providedTitle || ''} compare(${a}, ${b}) === ${expected}`.trim();
 
 test(macro, [0x00000000, 0x00000000], [0x00000000, 0x00000000], 0);
 test(macro, [0x00000000, 0x00000001], [0x00000000, 0x00000000], 1);

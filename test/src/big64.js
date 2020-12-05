@@ -7,7 +7,7 @@ function macro (t, a, o, expected) {
 	t.deepEqual(big64(a, o), expected);
 }
 
-macro.title = (providedTitle, a, o, expected) => `${providedTitle} big64(${a}, ${o}) === ${expected}`.trim();
+macro.title = (providedTitle, a, o, expected) => `${providedTitle || ''} big64(${a}, ${o}) === ${expected}`.trim();
 
 test(macro, [0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00], 0, [0x00000000, 0x00000000]);
 test(macro, [0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00], 0, [0xFF000000, 0x00000000]);

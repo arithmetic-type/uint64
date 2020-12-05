@@ -10,7 +10,7 @@ function macro (t, A, B, EXPECTED) {
 	t.deepEqual(add64(b, a), expected, 'b + a');
 }
 
-macro.title = (providedTitle, a, b, expected) => `${providedTitle} ${a} + ${b} === ${expected}`.trim();
+macro.title = (providedTitle, a, b, expected) => `${providedTitle || ''} ${a} + ${b} === ${expected}`.trim();
 
 test(macro, [0x00000000, 0x00000000], [0x00000000, 0x00000000], [0x00000000, 0x00000000]);
 test(macro, [0x00000000, 0x00000001], [0x00000000, 0x00000000], [0x00000000, 0x00000001]);

@@ -10,7 +10,7 @@ function macro (t, input, expected) {
 	t.deepEqual(not64(not64(input)), input);
 }
 
-macro.title = (providedTitle, input, expected) => `${providedTitle} ~${input} === ${expected}`.trim();
+macro.title = (providedTitle, input, expected) => `${providedTitle || ''} ~${input} === ${expected}`.trim();
 
 test(macro, [0x00000000, 0x00000000], [0xFFFFFFFF, 0xFFFFFFFF]);
 test(macro, [0x00000000, 0x00000001], [0xFFFFFFFF, 0xFFFFFFFE]);

@@ -8,7 +8,7 @@ function macro (t, a, s, expected) {
 	t.deepEqual(rotr64(a, s), expected);
 }
 
-macro.title = (providedTitle, a, s, expected) => `${providedTitle} ${a} rotr ${s} === ${expected}`.trim();
+macro.title = (providedTitle, a, s, expected) => `${providedTitle || ''} ${a} rotr ${s} === ${expected}`.trim();
 
 test(macro, [0x00000000, 0x00000000],  0, [0x00000000, 0x00000000]);
 test(macro, [0x00000000, 0x00000000], 53, [0x00000000, 0x00000000]);
