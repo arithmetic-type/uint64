@@ -5,8 +5,8 @@
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "ava": {
     "require": [
-      "babel-polyfill",
-      "babel-register"
+      "@babel/polyfill",
+      "@babel/register"
     ]
   },
   "babel": {
@@ -81,10 +81,10 @@
     "coveralls": "^2.13.1",
     "esdoc": "^1.1.0",
     "nyc": "^11.0.2",
-    "@babel/cli": "7.11.6",
-    "@babel/core": "7.11.6",
-    "@babel/preset-env": "7.11.5",
-    "@babel/register": "7.11.5",
+    "@babel/cli": "7.12.8",
+    "@babel/core": "7.12.9",
+    "@babel/preset-env": "7.12.7",
+    "@babel/register": "7.12.1",
     "babel-plugin-transform-remove-console": "6.9.4",
     "babel-plugin-unassert": "3.0.1",
     "babel-preset-power-assert": "3.0.0",
