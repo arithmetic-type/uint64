@@ -119,9 +119,9 @@
   "scripts": {
     "build": "babel src -d lib",
     "cover": "nyc --reporter=lcov npm test",
-    "prepublish": "npm run build",
     "test": "ava",
     "esdoc": "esdoc",
-    "lint": "true"
+    "lint": "true",
+    "prepare": "npm run build"
   }
 }
