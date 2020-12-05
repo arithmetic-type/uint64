@@ -123,7 +123,8 @@
     "esdoc": "esdoc",
     "lint": "true",
     "prepare": "npm run build",
-    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast"
+    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
+    "travis": "npm run lint && npm run cover"
   },
   "files": [
     "lib"
