@@ -124,7 +124,8 @@
     "lint": "true",
     "prepare": "npm run build",
     "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
-    "travis": "npm run lint && npm run cover"
+    "travis": "npm run lint && npm run cover",
+    "release": "np"
   },
   "files": [
     "lib"
