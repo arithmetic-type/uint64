@@ -4,6 +4,7 @@ export * from './big64' ;
 export * from './compare' ;
 export * from './get64' ;
 export * from './limits' ;
+export * from './mul64' ;
 export * from './not64' ;
 export * from './rotl64' ;
 export * from './rotr64' ;
