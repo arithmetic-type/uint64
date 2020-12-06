@@ -1,6 +1,6 @@
 {
-  "coverage": "53.84%",
-  "expectCount": 13,
+  "coverage": "46.66%",
+  "expectCount": 15,
   "actualCount": 7,
   "files": {
     "src/add64.js": {
@@ -40,6 +40,14 @@
       "expectCount": 2,
       "actualCount": 2,
       "undocumentLines": []
+    },
+    "src/mul64.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        18
+      ]
     },
     "src/not64.js": {
       "expectCount": 1,

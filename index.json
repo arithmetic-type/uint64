@@ -1,0 +1,1341 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/add64.js",
+    "content": "export function add64 (a, b) {\n\n\tconst [a0, a1] = a;\n\tconst [b0, b1] = b;\n\n\tconst u = (a1 + b1) | 0 ;\n\t// either two highest bits are on\n\t// or one highest bit is on and the\n\t// other number is >= in absolute value\n\tconst c = +((a1 < 0 && (b1 < 0 || b1 > ~a1)) || (b1 < 0 && b1 > ~a1));\n\n\treturn [(a0 + b0 + c) | 0, u];\n\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/add64.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "add64",
+    "memberof": "src/add64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/add64.js~add64",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/add64.js",
+    "importStyle": "{add64}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/and64.js",
+    "content": "export const and64 = (a, b) => [a[0] & b[0], a[1] & b[1]];\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/and64.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "and64",
+    "memberof": "src/and64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/and64.js~and64",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/and64.js",
+    "importStyle": "{and64}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/big64.js",
+    "content": "/**\n * Converts a 8-bytes big endian array to a 64-bit integer (also big endian).\n *\n * @param {Array} a Input big endian array.\n * @param {Number} o Offset in the input array.\n * @returns {Array} The 64-bit integer.\n */\nexport function big64 (a, o) {\n\treturn [\n\t\t(a[o + 0] << 24) | (a[o + 1] << 16) | (a[o + 2] << 8) | a[o + 3],\n\t\t(a[o + 4] << 24) | (a[o + 5] << 16) | (a[o + 6] << 8) | a[o + 7]\n\t] ;\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/big64.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "big64",
+    "memberof": "src/big64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/big64.js~big64",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/big64.js",
+    "importStyle": "{big64}",
+    "description": "Converts a 8-bytes big endian array to a 64-bit integer (also big endian).",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The 64-bit integer."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": "Input big endian array."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "o",
+        "description": "Offset in the input array."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The 64-bit integer."
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "src/compare.js",
+    "content": "\nexport function compare ( a , b ) {\n\n\tlet [a0, a1] = a;\n\tlet [b0, b1] = b;\n\n\ta0 >>>= 0;\n\ta1 >>>= 0;\n\tb0 >>>= 0;\n\tb1 >>>= 0;\n\n\treturn a0 < b0 ? -1 : a0 > b0 ? 1 :\n\t       a1 < b1 ? -1 : a1 > b1 ? 1 : 0 ;\n\n}\n\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/compare.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "compare",
+    "memberof": "src/compare.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/compare.js~compare",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/compare.js",
+    "importStyle": "{compare}",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "src/get64.js",
+    "content": "export const get64 = (hi, lo) => [ hi | 0 , lo | 0 ] ;\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/get64.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "get64",
+    "memberof": "src/get64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/get64.js~get64",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/get64.js",
+    "importStyle": "{get64}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "hi",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "lo",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "export * from './add64' ;\nexport * from './and64' ;\nexport * from './big64' ;\nexport * from './compare' ;\nexport * from './get64' ;\nexport * from './limits' ;\nexport * from './mul64' ;\nexport * from './not64' ;\nexport * from './rotl64' ;\nexport * from './rotr64' ;\nexport * from './shl64' ;\nexport * from './shr64' ;\nexport * from './xor64' ;\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "src/limits.js",
+    "content": "import { get64 } from './get64' ;\n\n/** 0 */\nexport const min = get64( 0x00000000 , 0x00000000 ) ;\n\n/** 2^64 - 1 */\nexport const max = get64( 0xFFFFFFFF , 0xFFFFFFFF ) ;\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/limits.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "variable",
+    "name": "min",
+    "memberof": "src/limits.js",
+    "static": true,
+    "longname": "src/limits.js~min",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/limits.js",
+    "importStyle": "{min}",
+    "description": "0",
+    "lineNumber": 4,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "variable",
+    "name": "max",
+    "memberof": "src/limits.js",
+    "static": true,
+    "longname": "src/limits.js~max",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/limits.js",
+    "importStyle": "{max}",
+    "description": "2^64 - 1",
+    "lineNumber": 7,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "src/mul64.js",
+    "content": "import {add64} from './add64';\n\n// TODO finish need function that multiplies two 32 bit values to 64 bit\nconst mul3264 = (a, b) => {\n\tconst a0 = (a >>> 16) & 0xFFFF;\n\tconst a1 = a & 0xFFFF;\n\tconst b0 = (b >>> 16) & 0xFFFF;\n\tconst b1 = b & 0xFFFF;\n\n\tconst x = [Math.imul(a0,b0), Math.imul(a1, b1)];\n\tconst t = Math.imul(a0,b1);\n\tconst u = Math.imul(a1,b0);\n\tconst y = [(t >>> 16) | 0, (t << 16) | 0];\n\tconst z = [(u >>> 16) | 0, (u << 16) | 0];\n\treturn add64(x,add64(y,z));\n};\n\nexport function mul64 (a, b) {\n\n\tconst [a0, a1] = a;\n\tconst [b0, b1] = b;\n\n\tconst x = [(Math.imul(a1, b0) + Math.imul(a0, b1)) | 0, 0];\n\tconst y = mul3264(a1, b1);\n\treturn add64(x, y);\n\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/mul64.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "mul3264",
+    "memberof": "src/mul64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mul64.js~mul3264",
+    "access": "public",
+    "export": false,
+    "importPath": "@aureooms/js-uint64/src/mul64.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "mul64",
+    "memberof": "src/mul64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mul64.js~mul64",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/mul64.js",
+    "importStyle": "{mul64}",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "src/not64.js",
+    "content": "export const not64 = a => [~a[0], ~a[1]];\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/not64.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "function",
+    "name": "not64",
+    "memberof": "src/not64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/not64.js~not64",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/not64.js",
+    "importStyle": "{not64}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 67,
+    "kind": "file",
+    "name": "src/rotl64.js",
+    "content": "import { rotr64 } from './rotr64' ;\n/**\n * Left rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `0 <= s <= 64`\n * @returns {Array}\n */\nexport function rotl64 (a, s) {\n\treturn rotr64(a, 64 - s);\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/rotl64.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 68,
+    "kind": "function",
+    "name": "rotl64",
+    "memberof": "src/rotl64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/rotl64.js~rotl64",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/rotl64.js",
+    "importStyle": "{rotl64}",
+    "description": "Left rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\nintegers in big endian order.",
+    "lineNumber": 10,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "s",
+        "description": "`0 <= s <= 64`"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "src/rotr64.js",
+    "content": "\n/**\n * Right rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * NB: used in the sha2 family\n *\n * @param {Array} a\n * @param {Number} s `0 <= s <= 64`\n * @returns {Array}\n */\n\nexport function rotr64 (a, s) {\n\tif ( s === 0 || s === 64 ) {\n\t\treturn [a[0],a[1]];\n\t}\n\telse if (s < 32) {\n\t\treturn [(a[1] << (32-s)) | a[0] >>> s, (a[0] << (32-s)) | (a[1] >>> s)];\n\t}\n\telse if (s === 32) {\n\t\treturn [a[1],a[0]];\n\t}\n\telse {\n\t\ts -= 32;\n\t\treturn [(a[0] << (32-s)) | (a[1] >>> s), (a[1] << (32-s)) | a[0] >>> s];\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/rotr64.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "rotr64",
+    "memberof": "src/rotr64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/rotr64.js~rotr64",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/rotr64.js",
+    "importStyle": "{rotr64}",
+    "description": "Right rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\nintegers in big endian order.\n\nNB: used in the sha2 family",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "s",
+        "description": "`0 <= s <= 64`"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "src/shl64.js",
+    "content": "/**\n * Left shift a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `s >= 0`\n * @returns {Array}\n */\nexport function shl64 (a, s) {\n\tif ( s === 0 ) {\n\t\treturn [a[0], a[1]];\n\t}\n\telse if ( s < 32 ) {\n\t\treturn [(a[1] >>> (32-s)) | (a[0] << s), a[1] << s | 0];\n\t}\n\telse if ( s < 64 ) {\n\t\treturn [a[1] << (s-32) | 0, 0];\n\t}\n\telse{\n\t\treturn [a[0], a[1]];\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/shl64.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 72,
+    "kind": "function",
+    "name": "shl64",
+    "memberof": "src/shl64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/shl64.js~shl64",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/shl64.js",
+    "importStyle": "{shl64}",
+    "description": "Left shift a 64-bit unsigned integer given as a pair of two 32-bit signed\nintegers in big endian order.",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "s",
+        "description": "`s >= 0`"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "file",
+    "name": "src/shr64.js",
+    "content": "/**\n * Right shift a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `s >= 0`\n * @returns {Array}\n */\nexport function shr64 (a, s) {\n\tif ( s === 0 ) {\n\t\treturn [a[0], a[1]];\n\t}\n\telse if ( s < 32 ) {\n\t\treturn [a[0] >>> s | 0, (a[0] << (32-s)) | (a[1] >>> s)];\n\t}\n\telse if ( s < 64 ) {\n\t\treturn [0, a[0] >>> (s-32) | 0];\n\t}\n\telse{\n\t\treturn [a[0], a[1]];\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/shr64.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 74,
+    "kind": "function",
+    "name": "shr64",
+    "memberof": "src/shr64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/shr64.js~shr64",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/shr64.js",
+    "importStyle": "{shr64}",
+    "description": "Right shift a 64-bit unsigned integer given as a pair of two 32-bit signed\nintegers in big endian order.",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "s",
+        "description": "`s >= 0`"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "file",
+    "name": "src/xor64.js",
+    "content": "export const xor64 = (a, b) => [a[0] ^ b[0], a[1] ^ b[1]];\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/xor64.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 76,
+    "kind": "function",
+    "name": "xor64",
+    "memberof": "src/xor64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xor64.js~xor64",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/xor64.js",
+    "importStyle": "{xor64}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "kind": "index",
+    "content": ":rabbit: [@aureooms/js-uint64](https://aureooms.github.io/js-uint64)\n==\n\n64-bit unsigned integer arithmetic and logic operators for JavaScript.\nImplemented using big endian arrays of two signed 32-bit integers.\n\nUsed in [@aureooms/js-hash](https://github.com/aureooms/js-hash).\nFor the 32-bit counterpart, see [@aureooms/js-uint32](https://github.com/aureooms/js-uint32).\n\n```js\nlet a = get64(0, 1) ;\nrotr64(a, 1); // [-1, 0]\n\nlet x = get64(0xFFFFFFFF, 0xFFFFFFFF);\nadd64(x, x); // [-1, -2]\n```\n\n[![License](https://img.shields.io/github/license/aureooms/js-uint64.svg)](https://raw.githubusercontent.com/aureooms/js-uint64/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@aureooms/js-uint64.svg)](https://www.npmjs.org/package/@aureooms/js-uint64)\n[![Build](https://img.shields.io/travis/aureooms/js-uint64/main.svg)](https://travis-ci.org/aureooms/js-uint64/branches)\n[![Dependencies](https://img.shields.io/david/aureooms/js-uint64.svg)](https://david-dm.org/aureooms/js-uint64)\n[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-uint64.svg)](https://david-dm.org/aureooms/js-uint64?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-uint64.svg)](https://github.com/aureooms/js-uint64/issues)\n[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-uint64.svg)](https://www.npmjs.org/package/@aureooms/js-uint64)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-uint64.svg)](https://codeclimate.com/github/aureooms/js-uint64/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-uint64.svg)](https://codeclimate.com/github/aureooms/js-uint64/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-uint64/main.svg)](https://codecov.io/gh/aureooms/js-uint64)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-uint64.svg)](https://codeclimate.com/github/aureooms/js-uint64/trends/technical_debt)\n[![Documentation](https://aureooms.github.io/js-uint64//badge.svg)](https://aureooms.github.io/js-uint64//source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-uint64)](https://bundlephobia.com/result?p=@aureooms/js-uint64)\n",
+    "longname": "/home/aureooms/dev/js/js-uint64/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@aureooms/js-uint64\",\n  \"description\": \"64-bit unsigned integer arithmetic and locic operators for JavaScript\",\n  \"version\": \"3.0.1\",\n  \"author\": \"Aurélien Ooms <aurelien.ooms@gmail.com>\",\n  \"ava\": {\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"presets\": [\n      \"@babel/preset-env\"\n    ],\n    \"env\": {\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ],\n        \"sourceMaps\": \"inline\"\n      },\n      \"development\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ],\n        \"sourceMaps\": \"inline\"\n      },\n      \"production\": {\n        \"plugins\": [\n          \"babel-plugin-unassert\",\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ],\n        \"sourceMaps\": \"inline\"\n      }\n    }\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/aureooms/js-uint64/issues\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/cli\": \"7.12.8\",\n    \"@babel/core\": \"7.12.9\",\n    \"@babel/preset-env\": \"7.12.7\",\n    \"@babel/register\": \"7.12.1\",\n    \"ava\": \"3.13.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"np\": \"7.0.0\",\n    \"nyc\": \"15.1.0\",\n    \"power-assert\": \"1.6.1\"\n  },\n  \"files\": [\n    \"lib\"\n  ],\n  \"homepage\": \"http://aureooms.github.io/js-uint64/\",\n  \"keywords\": [\n    \"64\",\n    \"arithmetic\",\n    \"bit\",\n    \"integer\",\n    \"javascript\",\n    \"logic\",\n    \"uint64\",\n    \"unsigned\"\n  ],\n  \"license\": \"AGPL-3.0\",\n  \"main\": \"lib/index.js\",\n  \"repository\": {\n    \"url\": \"https://github.com/aureooms/js-uint64.git\",\n    \"type\": \"git\"\n  },\n  \"scripts\": {\n    \"build\": \"babel src -d lib\",\n    \"cover\": \"nyc --reporter=lcov npm test\",\n    \"dev\": \"npm run lint -- --fix && npm run cover -- -- -st --fail-fast\",\n    \"esdoc\": \"esdoc\",\n    \"lint\": \"true\",\n    \"prepare\": \"npm run build\",\n    \"release\": \"np\",\n    \"test\": \"ava\",\n    \"travis\": \"npm run lint && npm run cover\"\n  },\n  \"sideEffects\": false\n}\n",
+    "longname": "/home/aureooms/dev/js/js-uint64/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": false,
+    "content": null,
+    "longname": "",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/aureooms/dev/js/js-uint64/doc/manual/overview.md",
+    "name": "./doc/manual/overview.md",
+    "content": "# Overview\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/aureooms/dev/js/js-uint64/doc/manual/installation.md",
+    "name": "./doc/manual/installation.md",
+    "content": "# Installation\n\nCan be managed using\n[jspm](http://jspm.io)\nor [npm](https://github.com/npm/npm).\n\n### jspm\n```terminal\njspm install npm:@aureooms/js-uint64\n```\n\n### npm\n```terminal\nnpm install @aureooms/js-uint64 --save\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/aureooms/dev/js/js-uint64/doc/manual/usage.md",
+    "name": "./doc/manual/usage.md",
+    "content": "# Usage\n\nThe code needs a ES2015+ polyfill to work, for example\n[regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).\n```js\nrequire( 'regenerator-runtime/runtime' ) ;\n// or\nimport 'regenerator-runtime/runtime' ;\n```\n\nThen\n```js\nconst uint64 = require( '@aureooms/js-uint64' ) ;\n// or\nimport * as uint64 from '@aureooms/js-uint64' ;\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/aureooms/dev/js/js-uint64/doc/manual/example.md",
+    "name": "./doc/manual/example.md",
+    "content": "# Example\n",
+    "static": true,
+    "access": "public"
+  }
+]
