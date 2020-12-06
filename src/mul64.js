@@ -1,6 +1,8 @@
 import {add64} from './add64';
 
-// TODO finish need function that multiplies two 32 bit values to 64 bit
+/**
+ * Multiplies two uint32 into one uint64.
+ */
 const mul3264 = (a, b) => {
 	const a0 = (a >>> 16) & 0xFFFF;
 	const a1 = a & 0xFFFF;
@@ -15,6 +17,9 @@ const mul3264 = (a, b) => {
 	return add64(x,add64(y,z));
 };
 
+/**
+ * Multiplies two uint64 into one uint64.
+ */
 export function mul64 (a, b) {
 
 	const [a0, a1] = a;
