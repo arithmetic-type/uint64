@@ -810,7 +810,7 @@
     "__docId__": 58,
     "kind": "file",
     "name": "src/index.js",
-    "content": "export * from './add64' ;\nexport * from './and64' ;\nexport * from './big64' ;\nexport * from './compare' ;\nexport * from './get64' ;\nexport * from './limits' ;\nexport * from './mul64' ;\nexport * from './not64' ;\nexport * from './rotl64' ;\nexport * from './rotr64' ;\nexport * from './shl64' ;\nexport * from './shr64' ;\nexport * from './xor64' ;\n",
+    "content": "export * from './add64' ;\nexport * from './and64' ;\nexport * from './big64' ;\nexport * from './compare' ;\nexport * from './get64' ;\nexport * from './limits' ;\nexport * from './mul3264' ;\nexport * from './mul64' ;\nexport * from './not64' ;\nexport * from './rotl64' ;\nexport * from './rotr64' ;\nexport * from './shl64' ;\nexport * from './shr64' ;\nexport * from './xor64' ;\n",
     "static": true,
     "longname": "/home/aureooms/dev/js/js-uint64/src/index.js",
     "access": "public",
@@ -869,10 +869,10 @@
   {
     "__docId__": 62,
     "kind": "file",
-    "name": "src/mul64.js",
-    "content": "import {add64} from './add64';\n\n// TODO finish need function that multiplies two 32 bit values to 64 bit\nconst mul3264 = (a, b) => {\n\tconst a0 = (a >>> 16) & 0xFFFF;\n\tconst a1 = a & 0xFFFF;\n\tconst b0 = (b >>> 16) & 0xFFFF;\n\tconst b1 = b & 0xFFFF;\n\n\tconst x = [Math.imul(a0,b0), Math.imul(a1, b1)];\n\tconst t = Math.imul(a0,b1);\n\tconst u = Math.imul(a1,b0);\n\tconst y = [(t >>> 16) | 0, (t << 16) | 0];\n\tconst z = [(u >>> 16) | 0, (u << 16) | 0];\n\treturn add64(x,add64(y,z));\n};\n\nexport function mul64 (a, b) {\n\n\tconst [a0, a1] = a;\n\tconst [b0, b1] = b;\n\n\tconst x = [(Math.imul(a1, b0) + Math.imul(a0, b1)) | 0, 0];\n\tconst y = mul3264(a1, b1);\n\treturn add64(x, y);\n\n}\n",
+    "name": "src/mul3264.js",
+    "content": "import {add64} from './add64';\n\n/**\n * Multiplies two uint32 into one uint64.\n */\nexport const mul3264 = (a, b) => {\n\tconst a0 = (a >>> 16) & 0xFFFF;\n\tconst a1 = a & 0xFFFF;\n\tconst b0 = (b >>> 16) & 0xFFFF;\n\tconst b1 = b & 0xFFFF;\n\n\tconst x = [Math.imul(a0,b0), Math.imul(a1, b1)];\n\tconst t = Math.imul(a0,b1);\n\tconst u = Math.imul(a1,b0);\n\tconst y = [(t >>> 16) | 0, (t << 16) | 0];\n\tconst z = [(u >>> 16) | 0, (u << 16) | 0];\n\treturn add64(x,add64(y,z));\n};\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/mul64.js",
+    "longname": "/home/aureooms/dev/js/js-uint64/src/mul3264.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -881,55 +881,17 @@
     "__docId__": 63,
     "kind": "function",
     "name": "mul3264",
-    "memberof": "src/mul64.js",
+    "memberof": "src/mul3264.js",
     "generator": false,
     "async": false,
     "static": true,
-    "longname": "src/mul64.js~mul3264",
-    "access": "public",
-    "export": false,
-    "importPath": "@aureooms/js-uint64/src/mul64.js",
-    "importStyle": null,
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
-    "params": [
-      {
-        "name": "a",
-        "types": [
-          "*"
-        ]
-      },
-      {
-        "name": "b",
-        "types": [
-          "*"
-        ]
-      }
-    ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    },
-    "ignore": true
-  },
-  {
-    "__docId__": 64,
-    "kind": "function",
-    "name": "mul64",
-    "memberof": "src/mul64.js",
-    "generator": false,
-    "async": false,
-    "static": true,
-    "longname": "src/mul64.js~mul64",
+    "longname": "src/mul3264.js~mul3264",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/mul64.js",
-    "importStyle": "{mul64}",
-    "description": null,
-    "lineNumber": 18,
-    "undocument": true,
+    "importPath": "@aureooms/js-uint64/src/mul3264.js",
+    "importStyle": "{mul3264}",
+    "description": "Multiplies two uint32 into one uint64.",
+    "lineNumber": 6,
     "params": [
       {
         "name": "a",
@@ -951,7 +913,53 @@
     }
   },
   {
+    "__docId__": 64,
+    "kind": "file",
+    "name": "src/mul64.js",
+    "content": "import {add64} from './add64';\nimport {mul3264} from './mul3264';\n\n/**\n * Multiplies two uint64 into one uint64.\n */\nexport function mul64 (a, b) {\n\n\tconst [a0, a1] = a;\n\tconst [b0, b1] = b;\n\n\tconst x = [(Math.imul(a1, b0) + Math.imul(a0, b1)) | 0, 0];\n\tconst y = mul3264(a1, b1);\n\treturn add64(x, y);\n\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-uint64/src/mul64.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
     "__docId__": 65,
+    "kind": "function",
+    "name": "mul64",
+    "memberof": "src/mul64.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mul64.js~mul64",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-uint64/src/mul64.js",
+    "importStyle": "{mul64}",
+    "description": "Multiplies two uint64 into one uint64.",
+    "lineNumber": 7,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
     "kind": "file",
     "name": "src/not64.js",
     "content": "export const not64 = a => [~a[0], ~a[1]];\n",
@@ -962,7 +970,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 66,
+    "__docId__": 67,
     "kind": "function",
     "name": "not64",
     "memberof": "src/not64.js",
@@ -988,7 +996,7 @@
     "return": null
   },
   {
-    "__docId__": 67,
+    "__docId__": 68,
     "kind": "file",
     "name": "src/rotl64.js",
     "content": "import { rotr64 } from './rotr64' ;\n/**\n * Left rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `0 <= s <= 64`\n * @returns {Array}\n */\nexport function rotl64 (a, s) {\n\treturn rotr64(a, 64 - s);\n}\n",
@@ -999,7 +1007,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 68,
+    "__docId__": 69,
     "kind": "function",
     "name": "rotl64",
     "memberof": "src/rotl64.js",
@@ -1051,7 +1059,7 @@
     }
   },
   {
-    "__docId__": 69,
+    "__docId__": 70,
     "kind": "file",
     "name": "src/rotr64.js",
     "content": "\n/**\n * Right rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * NB: used in the sha2 family\n *\n * @param {Array} a\n * @param {Number} s `0 <= s <= 64`\n * @returns {Array}\n */\n\nexport function rotr64 (a, s) {\n\tif ( s === 0 || s === 64 ) {\n\t\treturn [a[0],a[1]];\n\t}\n\telse if (s < 32) {\n\t\treturn [(a[1] << (32-s)) | a[0] >>> s, (a[0] << (32-s)) | (a[1] >>> s)];\n\t}\n\telse if (s === 32) {\n\t\treturn [a[1],a[0]];\n\t}\n\telse {\n\t\ts -= 32;\n\t\treturn [(a[0] << (32-s)) | (a[1] >>> s), (a[1] << (32-s)) | a[0] >>> s];\n\t}\n}\n",
@@ -1062,7 +1070,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 70,
+    "__docId__": 71,
     "kind": "function",
     "name": "rotr64",
     "memberof": "src/rotr64.js",
@@ -1114,7 +1122,7 @@
     }
   },
   {
-    "__docId__": 71,
+    "__docId__": 72,
     "kind": "file",
     "name": "src/shl64.js",
     "content": "/**\n * Left shift a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `s >= 0`\n * @returns {Array}\n */\nexport function shl64 (a, s) {\n\tif ( s === 0 ) {\n\t\treturn [a[0], a[1]];\n\t}\n\telse if ( s < 32 ) {\n\t\treturn [(a[1] >>> (32-s)) | (a[0] << s), a[1] << s | 0];\n\t}\n\telse if ( s < 64 ) {\n\t\treturn [a[1] << (s-32) | 0, 0];\n\t}\n\telse{\n\t\treturn [a[0], a[1]];\n\t}\n}\n",
@@ -1125,7 +1133,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 72,
+    "__docId__": 73,
     "kind": "function",
     "name": "shl64",
     "memberof": "src/shl64.js",
@@ -1177,7 +1185,7 @@
     }
   },
   {
-    "__docId__": 73,
+    "__docId__": 74,
     "kind": "file",
     "name": "src/shr64.js",
     "content": "/**\n * Right shift a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `s >= 0`\n * @returns {Array}\n */\nexport function shr64 (a, s) {\n\tif ( s === 0 ) {\n\t\treturn [a[0], a[1]];\n\t}\n\telse if ( s < 32 ) {\n\t\treturn [a[0] >>> s | 0, (a[0] << (32-s)) | (a[1] >>> s)];\n\t}\n\telse if ( s < 64 ) {\n\t\treturn [0, a[0] >>> (s-32) | 0];\n\t}\n\telse{\n\t\treturn [a[0], a[1]];\n\t}\n}\n",
@@ -1188,7 +1196,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 74,
+    "__docId__": 75,
     "kind": "function",
     "name": "shr64",
     "memberof": "src/shr64.js",
@@ -1240,7 +1248,7 @@
     }
   },
   {
-    "__docId__": 75,
+    "__docId__": 76,
     "kind": "file",
     "name": "src/xor64.js",
     "content": "export const xor64 = (a, b) => [a[0] ^ b[0], a[1] ^ b[1]];\n",
@@ -1251,7 +1259,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 76,
+    "__docId__": 77,
     "kind": "function",
     "name": "xor64",
     "memberof": "src/xor64.js",
@@ -1292,7 +1300,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@aureooms/js-uint64\",\n  \"description\": \"64-bit unsigned integer arithmetic and locic operators for JavaScript\",\n  \"version\": \"3.0.1\",\n  \"author\": \"Aurélien Ooms <aurelien.ooms@gmail.com>\",\n  \"ava\": {\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"presets\": [\n      \"@babel/preset-env\"\n    ],\n    \"env\": {\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ],\n        \"sourceMaps\": \"inline\"\n      },\n      \"development\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ],\n        \"sourceMaps\": \"inline\"\n      },\n      \"production\": {\n        \"plugins\": [\n          \"babel-plugin-unassert\",\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ],\n        \"sourceMaps\": \"inline\"\n      }\n    }\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/aureooms/js-uint64/issues\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/cli\": \"7.12.8\",\n    \"@babel/core\": \"7.12.9\",\n    \"@babel/preset-env\": \"7.12.7\",\n    \"@babel/register\": \"7.12.1\",\n    \"ava\": \"3.13.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"np\": \"7.0.0\",\n    \"nyc\": \"15.1.0\",\n    \"power-assert\": \"1.6.1\"\n  },\n  \"files\": [\n    \"lib\"\n  ],\n  \"homepage\": \"http://aureooms.github.io/js-uint64/\",\n  \"keywords\": [\n    \"64\",\n    \"arithmetic\",\n    \"bit\",\n    \"integer\",\n    \"javascript\",\n    \"logic\",\n    \"uint64\",\n    \"unsigned\"\n  ],\n  \"license\": \"AGPL-3.0\",\n  \"main\": \"lib/index.js\",\n  \"repository\": {\n    \"url\": \"https://github.com/aureooms/js-uint64.git\",\n    \"type\": \"git\"\n  },\n  \"scripts\": {\n    \"build\": \"babel src -d lib\",\n    \"cover\": \"nyc --reporter=lcov npm test\",\n    \"dev\": \"npm run lint -- --fix && npm run cover -- -- -st --fail-fast\",\n    \"esdoc\": \"esdoc\",\n    \"lint\": \"true\",\n    \"prepare\": \"npm run build\",\n    \"release\": \"np\",\n    \"test\": \"ava\",\n    \"travis\": \"npm run lint && npm run cover\"\n  },\n  \"sideEffects\": false\n}\n",
+    "content": "{\n  \"name\": \"@aureooms/js-uint64\",\n  \"description\": \"64-bit unsigned integer arithmetic and locic operators for JavaScript\",\n  \"version\": \"3.1.0\",\n  \"author\": \"Aurélien Ooms <aurelien.ooms@gmail.com>\",\n  \"ava\": {\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"presets\": [\n      \"@babel/preset-env\"\n    ],\n    \"env\": {\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ],\n        \"sourceMaps\": \"inline\"\n      },\n      \"development\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ],\n        \"sourceMaps\": \"inline\"\n      },\n      \"production\": {\n        \"plugins\": [\n          \"babel-plugin-unassert\",\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ],\n        \"sourceMaps\": \"inline\"\n      }\n    }\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/aureooms/js-uint64/issues\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/cli\": \"7.12.8\",\n    \"@babel/core\": \"7.12.9\",\n    \"@babel/preset-env\": \"7.12.7\",\n    \"@babel/register\": \"7.12.1\",\n    \"ava\": \"3.13.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"np\": \"7.0.0\",\n    \"nyc\": \"15.1.0\",\n    \"power-assert\": \"1.6.1\"\n  },\n  \"files\": [\n    \"lib\"\n  ],\n  \"homepage\": \"http://aureooms.github.io/js-uint64/\",\n  \"keywords\": [\n    \"64\",\n    \"arithmetic\",\n    \"bit\",\n    \"integer\",\n    \"javascript\",\n    \"logic\",\n    \"uint64\",\n    \"unsigned\"\n  ],\n  \"license\": \"AGPL-3.0\",\n  \"main\": \"lib/index.js\",\n  \"repository\": {\n    \"url\": \"https://github.com/aureooms/js-uint64.git\",\n    \"type\": \"git\"\n  },\n  \"scripts\": {\n    \"build\": \"babel src -d lib\",\n    \"cover\": \"nyc --reporter=lcov npm test\",\n    \"dev\": \"npm run lint -- --fix && npm run cover -- -- -st --fail-fast\",\n    \"esdoc\": \"esdoc\",\n    \"lint\": \"true\",\n    \"prepare\": \"npm run build\",\n    \"release\": \"np\",\n    \"test\": \"ava\",\n    \"travis\": \"npm run lint && npm run cover\"\n  },\n  \"sideEffects\": false\n}\n",
     "longname": "/home/aureooms/dev/js/js-uint64/package.json",
     "name": "package.json",
     "static": true,

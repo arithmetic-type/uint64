@@ -42,6 +42,12 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
+    "@aureooms/js-uint64/src/mul3264.js~mul3264",
+    "function/index.html#static-function-mul3264",
+    "<span>mul3264</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/mul3264.js</span>",
+    "function"
+  ],
+  [
     "@aureooms/js-uint64/src/mul64.js~mul64",
     "function/index.html#static-function-mul64",
     "<span>mul64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/mul64.js</span>",
@@ -405,6 +411,12 @@ window.esdocSearchIndex = [
     "src/limits.js",
     "file/src/limits.js.html",
     "src/limits.js",
+    "file"
+  ],
+  [
+    "src/mul3264.js",
+    "file/src/mul3264.js.html",
+    "src/mul3264.js",
     "file"
   ],
   [

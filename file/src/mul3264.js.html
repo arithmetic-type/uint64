@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">src/compare.js | @aureooms/js-uint64</title>
+  <title data-ice="title">src/mul3264.js | @aureooms/js-uint64</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -48,23 +48,25 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/compare.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
-export function compare ( a , b ) {
+<div class="content" data-ice="content"><h1 data-ice="title">src/mul3264.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import {add64} from &apos;./add64&apos;;
 
-	let [a0, a1] = a;
-	let [b0, b1] = b;
+/**
+ * Multiplies two uint32 into one uint64.
+ */
+export const mul3264 = (a, b) =&gt; {
+	const a0 = (a &gt;&gt;&gt; 16) &amp; 0xFFFF;
+	const a1 = a &amp; 0xFFFF;
+	const b0 = (b &gt;&gt;&gt; 16) &amp; 0xFFFF;
+	const b1 = b &amp; 0xFFFF;
 
-	a0 &gt;&gt;&gt;= 0;
-	a1 &gt;&gt;&gt;= 0;
-	b0 &gt;&gt;&gt;= 0;
-	b1 &gt;&gt;&gt;= 0;
-
-	return a0 &lt; b0 ? -1 : a0 &gt; b0 ? 1 :
-	       a1 &lt; b1 ? -1 : a1 &gt; b1 ? 1 : 0 ;
-
-}
-
+	const x = [Math.imul(a0,b0), Math.imul(a1, b1)];
+	const t = Math.imul(a0,b1);
+	const u = Math.imul(a1,b0);
+	const y = [(t &gt;&gt;&gt; 16) | 0, (t &lt;&lt; 16) | 0];
+	const z = [(u &gt;&gt;&gt; 16) | 0, (u &lt;&lt; 16) | 0];
+	return add64(x,add64(y,z));
+};
 </code></pre>
 
 </div>

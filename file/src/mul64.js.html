@@ -34,6 +34,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-big64">big64</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compare">compare</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-get64">get64</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mul3264">mul3264</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mul64">mul64</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-not64">not64</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rotl64">rotl64</a></span></span></li>
@@ -49,22 +50,11 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/mul64.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import {add64} from &apos;./add64&apos;;
+import {mul3264} from &apos;./mul3264&apos;;
 
-// TODO finish need function that multiplies two 32 bit values to 64 bit
-const mul3264 = (a, b) =&gt; {
-	const a0 = (a &gt;&gt;&gt; 16) &amp; 0xFFFF;
-	const a1 = a &amp; 0xFFFF;
-	const b0 = (b &gt;&gt;&gt; 16) &amp; 0xFFFF;
-	const b1 = b &amp; 0xFFFF;
-
-	const x = [Math.imul(a0,b0), Math.imul(a1, b1)];
-	const t = Math.imul(a0,b1);
-	const u = Math.imul(a1,b0);
-	const y = [(t &gt;&gt;&gt; 16) | 0, (t &lt;&lt; 16) | 0];
-	const z = [(u &gt;&gt;&gt; 16) | 0, (u &lt;&lt; 16) | 0];
-	return add64(x,add64(y,z));
-};
-
+/**
+ * Multiplies two uint64 into one uint64.
+ */
 export function mul64 (a, b) {
 
 	const [a0, a1] = a;
