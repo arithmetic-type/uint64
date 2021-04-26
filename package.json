@@ -74,7 +74,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-uint64/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/js-uint64/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -112,7 +112,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/aureooms/js-uint64.git",
+    "url": "https://github.com/make-github-pseudonymous-again/js-uint64.git",
     "type": "git"
   },
   "scripts": {
