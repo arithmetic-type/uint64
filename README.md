@@ -1,4 +1,4 @@
-:rabbit: [@aureooms/js-uint64](https://aureooms.github.io/js-uint64)
+:rabbit: [@aureooms/js-uint64](https://make-github-pseudonymous-again.github.io/js-uint64)
 ==
 
 64-bit unsigned integer arithmetic and logic operators for JavaScript.
@@ -27,5 +27,5 @@ add64(x, x); // [-1, -2]
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-uint64.svg)](https://codeclimate.com/github/aureooms/js-uint64/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-uint64/main.svg)](https://codecov.io/gh/aureooms/js-uint64)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-uint64.svg)](https://codeclimate.com/github/aureooms/js-uint64/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-uint64//badge.svg)](https://aureooms.github.io/js-uint64//source.html)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-uint64//badge.svg)](https://make-github-pseudonymous-again.github.io/js-uint64//source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-uint64)](https://bundlephobia.com/result?p=@aureooms/js-uint64)
