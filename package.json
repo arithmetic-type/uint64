@@ -61,12 +61,12 @@
     "power-assert": "1.6.1"
   },
   "ava": {
+    "files": [
+      "test/src/**/*"
+    ],
     "require": [
       "regenerator-runtime/runtime",
       "@babel/register"
-    ],
-    "files": [
-      "test/src/**/*"
     ],
     "timeout": "1m",
     "concurrency": 8
