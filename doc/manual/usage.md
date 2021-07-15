@@ -10,7 +10,7 @@ import 'regenerator-runtime/runtime' ;
 
 Then
 ```js
-const uint64 = require( '@aureooms/js-uint64' ) ;
+const uint64 = require( '@arithmetic-type/uint64' ) ;
 // or
-import * as uint64 from '@aureooms/js-uint64' ;
+import * as uint64 from '@arithmetic-type/uint64' ;
 ```

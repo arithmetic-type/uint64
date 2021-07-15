@@ -1,8 +1,8 @@
 {
-  "name": "@aureooms/js-uint64",
+  "name": "@arithmetic-type/uint64",
   "description": "64-bit unsigned integer arithmetic and locic operators for JavaScript",
   "version": "3.1.0",
-  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
+  "author": "make-github-pseudonymous-again",
   "ava": {
     "require": [
       "regenerator-runtime/runtime",
@@ -74,7 +74,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-uint64/issues"
+    "url": "https://github.com/arithmetic-type/uint64/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -98,7 +98,7 @@
   "files": [
     "lib"
   ],
-  "homepage": "http://make-github-pseudonymous-again.github.io/js-uint64/",
+  "homepage": "http://arithmetic-type.github.io/uint64",
   "keywords": [
     "64",
     "arithmetic",
@@ -112,7 +112,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-uint64.git",
+    "url": "https://github.com/arithmetic-type/uint64.git",
     "type": "git"
   },
   "scripts": {

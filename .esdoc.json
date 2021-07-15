@@ -35,7 +35,7 @@
           "autoPrivate": true
         },
         "brand": {
-          "title": "@aureooms/js-uint64"
+          "title": "@arithmetic-type/uint64"
         },
         "test": {
           "type": "ava",
