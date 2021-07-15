@@ -17,7 +17,7 @@ add64(x, x); // [-1, -2]
 
 [![License](https://img.shields.io/github/license/arithmetic-type/uint64.svg)](https://raw.githubusercontent.com/arithmetic-type/uint64/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@arithmetic-type/uint64.svg)](https://www.npmjs.org/package/@arithmetic-type/uint64)
-[![Build](https://img.shields.io/travis/arithmetic-type/uint64/main.svg)](https://travis-ci.org/arithmetic-type/uint64/branches)
+[![Build](https://img.shields.io/travis/arithmetic-type/uint64/main.svg)](https://travis-ci.com/arithmetic-type/uint64/branches)
 [![Dependencies](https://img.shields.io/david/arithmetic-type/uint64.svg)](https://david-dm.org/arithmetic-type/uint64)
 [![Dev dependencies](https://img.shields.io/david/dev/arithmetic-type/uint64.svg)](https://david-dm.org/arithmetic-type/uint64?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/arithmetic-type/uint64.svg)](https://github.com/arithmetic-type/uint64/issues)
