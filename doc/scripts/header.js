@@ -13,7 +13,7 @@ domReady(() => {
 	projectname.text = 'arithmetic-type/uint64';
 	projectname.href = './index.html';
 
-	const header = document.querySelectorAll('header')[0];
+	const header = document.querySelector('header');
 	header.insertBefore(projectname, header.firstChild);
 
 	const testlink = document.querySelector('header > a[data-ice="testLink"]');
