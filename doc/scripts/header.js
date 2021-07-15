@@ -17,7 +17,7 @@ domReady(() => {
 	header.insertBefore(projectname, header.firstChild);
 
 	const testlink = document.querySelector('header > a[data-ice="testLink"]');
-	testlink.href = 'https://coveralls.io/github/arithmetic-type/uint64';
+	testlink.href = 'https://app.codecov.io/gh/arithmetic-type/uint64';
 	testlink.target = '_BLANK';
 
 	const searchBox = document.querySelector('.search-box');
