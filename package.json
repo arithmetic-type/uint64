@@ -2,7 +2,64 @@
   "name": "@arithmetic-type/uint64",
   "description": "64-bit unsigned integer arithmetic and locic operators for JavaScript",
   "version": "3.1.0",
+  "license": "AGPL-3.0",
   "author": "make-github-pseudonymous-again",
+  "homepage": "https://arithmetic-type.github.io/uint64",
+  "repository": {
+    "url": "https://github.com/arithmetic-type/uint64",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/arithmetic-type/uint64/issues"
+  },
+  "keywords": [
+    "64",
+    "arithmetic",
+    "bit",
+    "integer",
+    "javascript",
+    "logic",
+    "uint64",
+    "unsigned"
+  ],
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
+    "esdoc": "esdoc",
+    "lint": "true",
+    "lint-config": "fixpack --dryRun",
+    "lint-config-and-fix": "fixpack || fixpack",
+    "prepare": "npm run build",
+    "release": "np",
+    "test": "ava",
+    "travis": "npm run lint && npm run cover"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "7.13.10",
+    "@babel/core": "7.13.10",
+    "@babel/preset-env": "7.13.10",
+    "@babel/register": "7.13.8",
+    "ava": "3.15.0",
+    "babel-plugin-transform-remove-console": "6.9.4",
+    "babel-plugin-unassert": "3.0.1",
+    "babel-preset-power-assert": "3.0.0",
+    "coveralls": "3.1.0",
+    "esdoc": "1.1.0",
+    "esdoc-inject-script-plugin": "1.0.0",
+    "esdoc-inject-style-plugin": "1.0.0",
+    "esdoc-standard-plugin": "1.0.0",
+    "fixpack": "4.0.0",
+    "np": "7.4.0",
+    "nyc": "15.1.0",
+    "power-assert": "1.6.1"
+  },
   "ava": {
     "require": [
       "regenerator-runtime/runtime",
@@ -72,62 +129,5 @@
         "sourceMaps": "inline"
       }
     }
-  },
-  "bugs": {
-    "url": "https://github.com/arithmetic-type/uint64/issues"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/cli": "7.13.10",
-    "@babel/core": "7.13.10",
-    "@babel/preset-env": "7.13.10",
-    "@babel/register": "7.13.8",
-    "ava": "3.15.0",
-    "babel-plugin-transform-remove-console": "6.9.4",
-    "babel-plugin-unassert": "3.0.1",
-    "babel-preset-power-assert": "3.0.0",
-    "coveralls": "3.1.0",
-    "esdoc": "1.1.0",
-    "esdoc-inject-script-plugin": "1.0.0",
-    "esdoc-inject-style-plugin": "1.0.0",
-    "esdoc-standard-plugin": "1.0.0",
-    "np": "7.4.0",
-    "nyc": "15.1.0",
-    "power-assert": "1.6.1",
-    "fixpack": "4.0.0"
-  },
-  "files": [
-    "lib"
-  ],
-  "homepage": "https://arithmetic-type.github.io/uint64",
-  "keywords": [
-    "64",
-    "arithmetic",
-    "bit",
-    "integer",
-    "javascript",
-    "logic",
-    "uint64",
-    "unsigned"
-  ],
-  "license": "AGPL-3.0",
-  "main": "lib/index.js",
-  "repository": {
-    "url": "https://github.com/arithmetic-type/uint64",
-    "type": "git"
-  },
-  "scripts": {
-    "build": "babel src -d lib",
-    "cover": "nyc --reporter=lcov npm test",
-    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
-    "esdoc": "esdoc",
-    "lint": "true",
-    "prepare": "npm run build",
-    "release": "np",
-    "test": "ava",
-    "travis": "npm run lint && npm run cover",
-    "lint-config-and-fix": "fixpack || fixpack",
-    "lint-config": "fixpack --dryRun"
-  },
-  "sideEffects": false
+  }
 }
