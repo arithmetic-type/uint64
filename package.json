@@ -1,7 +1,7 @@
 {
   "name": "@arithmetic-type/uint64",
   "description": "64-bit unsigned integer arithmetic and locic operators for JavaScript",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "license": "AGPL-3.0",
   "author": "make-github-pseudonymous-again",
   "homepage": "https://arithmetic-type.github.io/uint64",
