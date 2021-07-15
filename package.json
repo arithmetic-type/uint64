@@ -49,7 +49,7 @@
     "debug": "NODE_ENV=debug npm run test -- -st --fail-fast",
     "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
     "install-hooks": "husky install",
-    "lint": "true",
+    "lint": "xo",
     "lint-config": "fixpack --dryRun",
     "lint-config-and-fix": "fixpack || fixpack",
     "postinstall": "npm run install-hooks",
