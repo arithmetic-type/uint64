@@ -6,17 +6,18 @@
  * @param {Number} s `s >= 0`
  * @returns {Array}
  */
-export function shr64 (a, s) {
-	if ( s === 0 ) {
+export function shr64(a, s) {
+	if (s === 0) {
 		return [a[0], a[1]];
 	}
-	else if ( s < 32 ) {
-		return [a[0] >>> s | 0, (a[0] << (32-s)) | (a[1] >>> s)];
+
+	if (s < 32) {
+		return [(a[0] >>> s) | 0, (a[0] << (32 - s)) | (a[1] >>> s)];
 	}
-	else if ( s < 64 ) {
-		return [0, a[0] >>> (s-32) | 0];
+
+	if (s < 64) {
+		return [0, (a[0] >>> (s - 32)) | 0];
 	}
-	else{
-		return [a[0], a[1]];
-	}
+
+	return [a[0], a[1]];
 }

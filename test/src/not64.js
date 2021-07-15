@@ -1,8 +1,8 @@
 import test from 'ava';
 
-import { not64 , get64 } from '../../src/index.js' ;
+import {not64, get64} from '../../src/index.js';
 
-function macro (t, input, expected) {
+function macro(t, input, expected) {
 	input = get64(...input);
 	expected = get64(...expected);
 	t.deepEqual(not64(input), expected);
@@ -10,8 +10,9 @@ function macro (t, input, expected) {
 	t.deepEqual(not64(not64(input)), input);
 }
 
-macro.title = (providedTitle, input, expected) => `${providedTitle || ''} ~${input} === ${expected}`.trim();
+macro.title = (providedTitle, input, expected) =>
+	`${providedTitle || ''} ~${input} === ${expected}`.trim();
 
-test(macro, [0x00000000, 0x00000000], [0xFFFFFFFF, 0xFFFFFFFF]);
-test(macro, [0x00000000, 0x00000001], [0xFFFFFFFF, 0xFFFFFFFE]);
-test(macro, [0x00000000, 0x00000002], [0xFFFFFFFF, 0xFFFFFFFD]);
+test(macro, [0x00_00_00_00, 0x00_00_00_00], [0xff_ff_ff_ff, 0xff_ff_ff_ff]);
+test(macro, [0x00_00_00_00, 0x00_00_00_01], [0xff_ff_ff_ff, 0xff_ff_ff_fe]);
+test(macro, [0x00_00_00_00, 0x00_00_00_02], [0xff_ff_ff_ff, 0xff_ff_ff_fd]);
