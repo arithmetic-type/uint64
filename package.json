@@ -113,7 +113,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/arithmetic-type/uint64.git",
+    "url": "https://github.com/arithmetic-type/uint64",
     "type": "git"
   },
   "scripts": {
