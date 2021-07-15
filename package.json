@@ -56,6 +56,7 @@
     "lint-config-and-fix": "fixpack || fixpack",
     "postinstall": "npm run install-hooks",
     "postpublish": "pinst --enable",
+    "precommit": "lint-staged",
     "prepare": "npm run build",
     "prepublishOnly": "pinst --disable",
     "release": "np --message ':hatching_chick: release: Bumping to v%s.'",
@@ -81,6 +82,7 @@
     "esdoc-standard-plugin": "1.0.0",
     "fixpack": "4.0.0",
     "husky": "7.0.1",
+    "lint-staged": "11.0.1",
     "microbundle": "0.13.1",
     "np": "7.4.0",
     "pinst": "2.1.6",
@@ -181,6 +183,14 @@
         ]
       }
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint-and-fix"
+    ],
+    "package.json": [
+      "npm run lint-config-and-fix"
+    ]
   },
   "prettier": {
     "trailingComma": "all"
