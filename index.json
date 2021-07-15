@@ -567,9 +567,9 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/add64.js",
-    "content": "export function add64 (a, b) {\n\n\tconst [a0, a1] = a;\n\tconst [b0, b1] = b;\n\n\tconst u = (a1 + b1) | 0 ;\n\t// either two highest bits are on\n\t// or one highest bit is on and the\n\t// other number is >= in absolute value\n\tconst c = +((a1 < 0 && (b1 < 0 || b1 > ~a1)) || (b1 < 0 && b1 > ~a1));\n\n\treturn [(a0 + b0 + c) | 0, u];\n\n}\n",
+    "content": "export function add64(a, b) {\n\tconst [a0, a1] = a;\n\tconst [b0, b1] = b;\n\n\tconst u = (a1 + b1) | 0;\n\t// Either two highest bits are on\n\t// or one highest bit is on and the\n\t// other number is >= in absolute value\n\tconst c = Number((a1 < 0 && (b1 < 0 || b1 > ~a1)) || (b1 < 0 && b1 > ~a1));\n\n\treturn [(a0 + b0 + c) | 0, u];\n}\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/add64.js",
+    "longname": "/home/runner/work/uint64/uint64/src/add64.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -585,7 +585,7 @@
     "longname": "src/add64.js~add64",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/add64.js",
+    "importPath": "@arithmetic-type/uint64/src/add64.js",
     "importStyle": "{add64}",
     "description": null,
     "lineNumber": 1,
@@ -616,7 +616,7 @@
     "name": "src/and64.js",
     "content": "export const and64 = (a, b) => [a[0] & b[0], a[1] & b[1]];\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/and64.js",
+    "longname": "/home/runner/work/uint64/uint64/src/and64.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -632,7 +632,7 @@
     "longname": "src/and64.js~and64",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/and64.js",
+    "importPath": "@arithmetic-type/uint64/src/and64.js",
     "importStyle": "{and64}",
     "description": null,
     "lineNumber": 1,
@@ -657,9 +657,9 @@
     "__docId__": 52,
     "kind": "file",
     "name": "src/big64.js",
-    "content": "/**\n * Converts a 8-bytes big endian array to a 64-bit integer (also big endian).\n *\n * @param {Array} a Input big endian array.\n * @param {Number} o Offset in the input array.\n * @returns {Array} The 64-bit integer.\n */\nexport function big64 (a, o) {\n\treturn [\n\t\t(a[o + 0] << 24) | (a[o + 1] << 16) | (a[o + 2] << 8) | a[o + 3],\n\t\t(a[o + 4] << 24) | (a[o + 5] << 16) | (a[o + 6] << 8) | a[o + 7]\n\t] ;\n}\n",
+    "content": "/**\n * Converts a 8-bytes big endian array to a 64-bit integer (also big endian).\n *\n * @param {Array} a Input big endian array.\n * @param {Number} o Offset in the input array.\n * @returns {Array} The 64-bit integer.\n */\nexport function big64(a, o) {\n\treturn [\n\t\t(a[o + 0] << 24) | (a[o + 1] << 16) | (a[o + 2] << 8) | a[o + 3],\n\t\t(a[o + 4] << 24) | (a[o + 5] << 16) | (a[o + 6] << 8) | a[o + 7],\n\t];\n}\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/big64.js",
+    "longname": "/home/runner/work/uint64/uint64/src/big64.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -675,7 +675,7 @@
     "longname": "src/big64.js~big64",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/big64.js",
+    "importPath": "@arithmetic-type/uint64/src/big64.js",
     "importStyle": "{big64}",
     "description": "Converts a 8-bytes big endian array to a 64-bit integer (also big endian).",
     "lineNumber": 8,
@@ -720,9 +720,9 @@
     "__docId__": 54,
     "kind": "file",
     "name": "src/compare.js",
-    "content": "\nexport function compare ( a , b ) {\n\n\tlet [a0, a1] = a;\n\tlet [b0, b1] = b;\n\n\ta0 >>>= 0;\n\ta1 >>>= 0;\n\tb0 >>>= 0;\n\tb1 >>>= 0;\n\n\treturn a0 < b0 ? -1 : a0 > b0 ? 1 :\n\t       a1 < b1 ? -1 : a1 > b1 ? 1 : 0 ;\n\n}\n\n",
+    "content": "export function compare(a, b) {\n\tlet [a0, a1] = a;\n\tlet [b0, b1] = b;\n\n\ta0 >>>= 0;\n\ta1 >>>= 0;\n\tb0 >>>= 0;\n\tb1 >>>= 0;\n\n\treturn a0 < b0 ? -1 : a0 > b0 ? 1 : a1 < b1 ? -1 : a1 > b1 ? 1 : 0;\n}\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/compare.js",
+    "longname": "/home/runner/work/uint64/uint64/src/compare.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -738,10 +738,10 @@
     "longname": "src/compare.js~compare",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/compare.js",
+    "importPath": "@arithmetic-type/uint64/src/compare.js",
     "importStyle": "{compare}",
     "description": null,
-    "lineNumber": 2,
+    "lineNumber": 1,
     "undocument": true,
     "params": [
       {
@@ -767,9 +767,9 @@
     "__docId__": 56,
     "kind": "file",
     "name": "src/get64.js",
-    "content": "export const get64 = (hi, lo) => [ hi | 0 , lo | 0 ] ;\n",
+    "content": "export const get64 = (hi, lo) => [hi | 0, lo | 0];\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/get64.js",
+    "longname": "/home/runner/work/uint64/uint64/src/get64.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -785,7 +785,7 @@
     "longname": "src/get64.js~get64",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/get64.js",
+    "importPath": "@arithmetic-type/uint64/src/get64.js",
     "importStyle": "{get64}",
     "description": null,
     "lineNumber": 1,
@@ -810,9 +810,9 @@
     "__docId__": 58,
     "kind": "file",
     "name": "src/index.js",
-    "content": "export * from './add64' ;\nexport * from './and64' ;\nexport * from './big64' ;\nexport * from './compare' ;\nexport * from './get64' ;\nexport * from './limits' ;\nexport * from './mul3264' ;\nexport * from './mul64' ;\nexport * from './not64' ;\nexport * from './rotl64' ;\nexport * from './rotr64' ;\nexport * from './shl64' ;\nexport * from './shr64' ;\nexport * from './xor64' ;\n",
+    "content": "export * from './add64.js';\nexport * from './and64.js';\nexport * from './big64.js';\nexport * from './compare.js';\nexport * from './get64.js';\nexport * from './limits.js';\nexport * from './mul3264.js';\nexport * from './mul64.js';\nexport * from './not64.js';\nexport * from './rotl64.js';\nexport * from './rotr64.js';\nexport * from './shl64.js';\nexport * from './shr64.js';\nexport * from './xor64.js';\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/index.js",
+    "longname": "/home/runner/work/uint64/uint64/src/index.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -820,111 +820,16 @@
   {
     "__docId__": 59,
     "kind": "file",
-    "name": "src/limits.js",
-    "content": "import { get64 } from './get64' ;\n\n/** 0 */\nexport const min = get64( 0x00000000 , 0x00000000 ) ;\n\n/** 2^64 - 1 */\nexport const max = get64( 0xFFFFFFFF , 0xFFFFFFFF ) ;\n",
+    "name": "src/mul64.js",
+    "content": "import {add64} from './add64.js';\nimport {mul3264} from './mul3264.js';\n\n/**\n * Multiplies two uint64 into one uint64.\n */\nexport function mul64(a, b) {\n\tconst [a0, a1] = a;\n\tconst [b0, b1] = b;\n\n\tconst x = [(Math.imul(a1, b0) + Math.imul(a0, b1)) | 0, 0];\n\tconst y = mul3264(a1, b1);\n\treturn add64(x, y);\n}\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/limits.js",
+    "longname": "/home/runner/work/uint64/uint64/src/mul64.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
     "__docId__": 60,
-    "kind": "variable",
-    "name": "min",
-    "memberof": "src/limits.js",
-    "static": true,
-    "longname": "src/limits.js~min",
-    "access": "public",
-    "export": true,
-    "importPath": "@aureooms/js-uint64/src/limits.js",
-    "importStyle": "{min}",
-    "description": "0",
-    "lineNumber": 4,
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 61,
-    "kind": "variable",
-    "name": "max",
-    "memberof": "src/limits.js",
-    "static": true,
-    "longname": "src/limits.js~max",
-    "access": "public",
-    "export": true,
-    "importPath": "@aureooms/js-uint64/src/limits.js",
-    "importStyle": "{max}",
-    "description": "2^64 - 1",
-    "lineNumber": 7,
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 62,
-    "kind": "file",
-    "name": "src/mul3264.js",
-    "content": "import {add64} from './add64';\n\n/**\n * Multiplies two uint32 into one uint64.\n */\nexport const mul3264 = (a, b) => {\n\tconst a0 = (a >>> 16) & 0xFFFF;\n\tconst a1 = a & 0xFFFF;\n\tconst b0 = (b >>> 16) & 0xFFFF;\n\tconst b1 = b & 0xFFFF;\n\n\tconst x = [Math.imul(a0,b0), Math.imul(a1, b1)];\n\tconst t = Math.imul(a0,b1);\n\tconst u = Math.imul(a1,b0);\n\tconst y = [(t >>> 16) | 0, (t << 16) | 0];\n\tconst z = [(u >>> 16) | 0, (u << 16) | 0];\n\treturn add64(x,add64(y,z));\n};\n",
-    "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/mul3264.js",
-    "access": "public",
-    "description": null,
-    "lineNumber": 1
-  },
-  {
-    "__docId__": 63,
-    "kind": "function",
-    "name": "mul3264",
-    "memberof": "src/mul3264.js",
-    "generator": false,
-    "async": false,
-    "static": true,
-    "longname": "src/mul3264.js~mul3264",
-    "access": "public",
-    "export": true,
-    "importPath": "@aureooms/js-uint64/src/mul3264.js",
-    "importStyle": "{mul3264}",
-    "description": "Multiplies two uint32 into one uint64.",
-    "lineNumber": 6,
-    "params": [
-      {
-        "name": "a",
-        "types": [
-          "*"
-        ]
-      },
-      {
-        "name": "b",
-        "types": [
-          "*"
-        ]
-      }
-    ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 64,
-    "kind": "file",
-    "name": "src/mul64.js",
-    "content": "import {add64} from './add64';\nimport {mul3264} from './mul3264';\n\n/**\n * Multiplies two uint64 into one uint64.\n */\nexport function mul64 (a, b) {\n\n\tconst [a0, a1] = a;\n\tconst [b0, b1] = b;\n\n\tconst x = [(Math.imul(a1, b0) + Math.imul(a0, b1)) | 0, 0];\n\tconst y = mul3264(a1, b1);\n\treturn add64(x, y);\n\n}\n",
-    "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/mul64.js",
-    "access": "public",
-    "description": null,
-    "lineNumber": 1
-  },
-  {
-    "__docId__": 65,
     "kind": "function",
     "name": "mul64",
     "memberof": "src/mul64.js",
@@ -934,7 +839,7 @@
     "longname": "src/mul64.js~mul64",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/mul64.js",
+    "importPath": "@arithmetic-type/uint64/src/mul64.js",
     "importStyle": "{mul64}",
     "description": "Multiplies two uint64 into one uint64.",
     "lineNumber": 7,
@@ -959,18 +864,18 @@
     }
   },
   {
-    "__docId__": 66,
+    "__docId__": 61,
     "kind": "file",
     "name": "src/not64.js",
-    "content": "export const not64 = a => [~a[0], ~a[1]];\n",
+    "content": "export const not64 = (a) => [~a[0], ~a[1]];\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/not64.js",
+    "longname": "/home/runner/work/uint64/uint64/src/not64.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 67,
+    "__docId__": 62,
     "kind": "function",
     "name": "not64",
     "memberof": "src/not64.js",
@@ -980,7 +885,7 @@
     "longname": "src/not64.js~not64",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/not64.js",
+    "importPath": "@arithmetic-type/uint64/src/not64.js",
     "importStyle": "{not64}",
     "description": null,
     "lineNumber": 1,
@@ -996,18 +901,18 @@
     "return": null
   },
   {
-    "__docId__": 68,
+    "__docId__": 63,
     "kind": "file",
     "name": "src/rotl64.js",
-    "content": "import { rotr64 } from './rotr64' ;\n/**\n * Left rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `0 <= s <= 64`\n * @returns {Array}\n */\nexport function rotl64 (a, s) {\n\treturn rotr64(a, 64 - s);\n}\n",
+    "content": "import {rotr64} from './rotr64.js';\n/**\n * Left rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `0 <= s <= 64`\n * @returns {Array}\n */\nexport function rotl64(a, s) {\n\treturn rotr64(a, 64 - s);\n}\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/rotl64.js",
+    "longname": "/home/runner/work/uint64/uint64/src/rotl64.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 69,
+    "__docId__": 64,
     "kind": "function",
     "name": "rotl64",
     "memberof": "src/rotl64.js",
@@ -1017,7 +922,7 @@
     "longname": "src/rotl64.js~rotl64",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/rotl64.js",
+    "importPath": "@arithmetic-type/uint64/src/rotl64.js",
     "importStyle": "{rotl64}",
     "description": "Left rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\nintegers in big endian order.",
     "lineNumber": 10,
@@ -1059,18 +964,18 @@
     }
   },
   {
-    "__docId__": 70,
+    "__docId__": 65,
     "kind": "file",
     "name": "src/rotr64.js",
-    "content": "\n/**\n * Right rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * NB: used in the sha2 family\n *\n * @param {Array} a\n * @param {Number} s `0 <= s <= 64`\n * @returns {Array}\n */\n\nexport function rotr64 (a, s) {\n\tif ( s === 0 || s === 64 ) {\n\t\treturn [a[0],a[1]];\n\t}\n\telse if (s < 32) {\n\t\treturn [(a[1] << (32-s)) | a[0] >>> s, (a[0] << (32-s)) | (a[1] >>> s)];\n\t}\n\telse if (s === 32) {\n\t\treturn [a[1],a[0]];\n\t}\n\telse {\n\t\ts -= 32;\n\t\treturn [(a[0] << (32-s)) | (a[1] >>> s), (a[1] << (32-s)) | a[0] >>> s];\n\t}\n}\n",
+    "content": "/**\n * Right rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * NB: used in the sha2 family\n *\n * @param {Array} a\n * @param {Number} s `0 <= s <= 64`\n * @returns {Array}\n */\n\nexport function rotr64(a, s) {\n\tif (s === 0 || s === 64) {\n\t\treturn [a[0], a[1]];\n\t}\n\n\tif (s < 32) {\n\t\treturn [\n\t\t\t(a[1] << (32 - s)) | (a[0] >>> s),\n\t\t\t(a[0] << (32 - s)) | (a[1] >>> s),\n\t\t];\n\t}\n\n\tif (s === 32) {\n\t\treturn [a[1], a[0]];\n\t}\n\n\ts -= 32;\n\treturn [(a[0] << (32 - s)) | (a[1] >>> s), (a[1] << (32 - s)) | (a[0] >>> s)];\n}\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/rotr64.js",
+    "longname": "/home/runner/work/uint64/uint64/src/rotr64.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 71,
+    "__docId__": 66,
     "kind": "function",
     "name": "rotr64",
     "memberof": "src/rotr64.js",
@@ -1080,10 +985,10 @@
     "longname": "src/rotr64.js~rotr64",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/rotr64.js",
+    "importPath": "@arithmetic-type/uint64/src/rotr64.js",
     "importStyle": "{rotr64}",
     "description": "Right rotate a 64-bit unsigned integer given as a pair of two 32-bit signed\nintegers in big endian order.\n\nNB: used in the sha2 family",
-    "lineNumber": 13,
+    "lineNumber": 12,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1122,18 +1027,18 @@
     }
   },
   {
-    "__docId__": 72,
+    "__docId__": 67,
     "kind": "file",
     "name": "src/shl64.js",
-    "content": "/**\n * Left shift a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `s >= 0`\n * @returns {Array}\n */\nexport function shl64 (a, s) {\n\tif ( s === 0 ) {\n\t\treturn [a[0], a[1]];\n\t}\n\telse if ( s < 32 ) {\n\t\treturn [(a[1] >>> (32-s)) | (a[0] << s), a[1] << s | 0];\n\t}\n\telse if ( s < 64 ) {\n\t\treturn [a[1] << (s-32) | 0, 0];\n\t}\n\telse{\n\t\treturn [a[0], a[1]];\n\t}\n}\n",
+    "content": "/**\n * Left shift a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `s >= 0`\n * @returns {Array}\n */\nexport function shl64(a, s) {\n\tif (s === 0) {\n\t\treturn [a[0], a[1]];\n\t}\n\n\tif (s < 32) {\n\t\treturn [(a[1] >>> (32 - s)) | (a[0] << s), (a[1] << s) | 0];\n\t}\n\n\tif (s < 64) {\n\t\treturn [(a[1] << (s - 32)) | 0, 0];\n\t}\n\n\treturn [a[0], a[1]];\n}\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/shl64.js",
+    "longname": "/home/runner/work/uint64/uint64/src/shl64.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 73,
+    "__docId__": 68,
     "kind": "function",
     "name": "shl64",
     "memberof": "src/shl64.js",
@@ -1143,7 +1048,7 @@
     "longname": "src/shl64.js~shl64",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/shl64.js",
+    "importPath": "@arithmetic-type/uint64/src/shl64.js",
     "importStyle": "{shl64}",
     "description": "Left shift a 64-bit unsigned integer given as a pair of two 32-bit signed\nintegers in big endian order.",
     "lineNumber": 9,
@@ -1185,18 +1090,18 @@
     }
   },
   {
-    "__docId__": 74,
+    "__docId__": 69,
     "kind": "file",
     "name": "src/shr64.js",
-    "content": "/**\n * Right shift a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `s >= 0`\n * @returns {Array}\n */\nexport function shr64 (a, s) {\n\tif ( s === 0 ) {\n\t\treturn [a[0], a[1]];\n\t}\n\telse if ( s < 32 ) {\n\t\treturn [a[0] >>> s | 0, (a[0] << (32-s)) | (a[1] >>> s)];\n\t}\n\telse if ( s < 64 ) {\n\t\treturn [0, a[0] >>> (s-32) | 0];\n\t}\n\telse{\n\t\treturn [a[0], a[1]];\n\t}\n}\n",
+    "content": "/**\n * Right shift a 64-bit unsigned integer given as a pair of two 32-bit signed\n * integers in big endian order.\n *\n * @param {Array} a\n * @param {Number} s `s >= 0`\n * @returns {Array}\n */\nexport function shr64(a, s) {\n\tif (s === 0) {\n\t\treturn [a[0], a[1]];\n\t}\n\n\tif (s < 32) {\n\t\treturn [(a[0] >>> s) | 0, (a[0] << (32 - s)) | (a[1] >>> s)];\n\t}\n\n\tif (s < 64) {\n\t\treturn [0, (a[0] >>> (s - 32)) | 0];\n\t}\n\n\treturn [a[0], a[1]];\n}\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/shr64.js",
+    "longname": "/home/runner/work/uint64/uint64/src/shr64.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 75,
+    "__docId__": 70,
     "kind": "function",
     "name": "shr64",
     "memberof": "src/shr64.js",
@@ -1206,7 +1111,7 @@
     "longname": "src/shr64.js~shr64",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/shr64.js",
+    "importPath": "@arithmetic-type/uint64/src/shr64.js",
     "importStyle": "{shr64}",
     "description": "Right shift a 64-bit unsigned integer given as a pair of two 32-bit signed\nintegers in big endian order.",
     "lineNumber": 9,
@@ -1248,18 +1153,18 @@
     }
   },
   {
-    "__docId__": 76,
+    "__docId__": 71,
     "kind": "file",
     "name": "src/xor64.js",
     "content": "export const xor64 = (a, b) => [a[0] ^ b[0], a[1] ^ b[1]];\n",
     "static": true,
-    "longname": "/home/aureooms/dev/js/js-uint64/src/xor64.js",
+    "longname": "/home/runner/work/uint64/uint64/src/xor64.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 77,
+    "__docId__": 72,
     "kind": "function",
     "name": "xor64",
     "memberof": "src/xor64.js",
@@ -1269,7 +1174,7 @@
     "longname": "src/xor64.js~xor64",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-uint64/src/xor64.js",
+    "importPath": "@arithmetic-type/uint64/src/xor64.js",
     "importStyle": "{xor64}",
     "description": null,
     "lineNumber": 1,
@@ -1292,16 +1197,16 @@
   },
   {
     "kind": "index",
-    "content": ":rabbit: [@aureooms/js-uint64](https://aureooms.github.io/js-uint64)\n==\n\n64-bit unsigned integer arithmetic and logic operators for JavaScript.\nImplemented using big endian arrays of two signed 32-bit integers.\n\nUsed in [@aureooms/js-hash](https://github.com/aureooms/js-hash).\nFor the 32-bit counterpart, see [@aureooms/js-uint32](https://github.com/aureooms/js-uint32).\n\n```js\nlet a = get64(0, 1) ;\nrotr64(a, 1); // [-1, 0]\n\nlet x = get64(0xFFFFFFFF, 0xFFFFFFFF);\nadd64(x, x); // [-1, -2]\n```\n\n[![License](https://img.shields.io/github/license/aureooms/js-uint64.svg)](https://raw.githubusercontent.com/aureooms/js-uint64/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@aureooms/js-uint64.svg)](https://www.npmjs.org/package/@aureooms/js-uint64)\n[![Build](https://img.shields.io/travis/aureooms/js-uint64/main.svg)](https://travis-ci.org/aureooms/js-uint64/branches)\n[![Dependencies](https://img.shields.io/david/aureooms/js-uint64.svg)](https://david-dm.org/aureooms/js-uint64)\n[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-uint64.svg)](https://david-dm.org/aureooms/js-uint64?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-uint64.svg)](https://github.com/aureooms/js-uint64/issues)\n[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-uint64.svg)](https://www.npmjs.org/package/@aureooms/js-uint64)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-uint64.svg)](https://codeclimate.com/github/aureooms/js-uint64/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-uint64.svg)](https://codeclimate.com/github/aureooms/js-uint64/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-uint64/main.svg)](https://codecov.io/gh/aureooms/js-uint64)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-uint64.svg)](https://codeclimate.com/github/aureooms/js-uint64/trends/technical_debt)\n[![Documentation](https://aureooms.github.io/js-uint64//badge.svg)](https://aureooms.github.io/js-uint64//source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-uint64)](https://bundlephobia.com/result?p=@aureooms/js-uint64)\n",
-    "longname": "/home/aureooms/dev/js/js-uint64/README.md",
+    "content": ":rabbit: [@arithmetic-type/uint64](https://arithmetic-type.github.io/uint64)\n==\n\n64-bit unsigned integer arithmetic and logic operators for JavaScript.\nImplemented using big endian arrays of two signed 32-bit integers.\n\nUsed in [js-hash](https://github.com/make-github-pseudonymous-again/js-hash).\nFor the 32-bit counterpart, see [arithmetic-type/uint32](https://github.com/arithmetic-type/uint32).\n\n```js\nlet a = get64(0, 1) ;\nrotr64(a, 1); // [-1, 0]\n\nlet x = get64(0xFFFFFFFF, 0xFFFFFFFF);\nadd64(x, x); // [-1, -2]\n```\n\n[![License](https://img.shields.io/github/license/arithmetic-type/uint64.svg)](https://raw.githubusercontent.com/arithmetic-type/uint64/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@arithmetic-type/uint64.svg)](https://www.npmjs.org/package/@arithmetic-type/uint64)\n[![Tests](https://img.shields.io/github/workflow/status/arithmetic-type/uint64/ci:test?event=push&label=tests)](https://github.com/arithmetic-type/uint64/actions/workflows/ci:test.yml?query=branch:main)\n[![Dependencies](https://img.shields.io/david/arithmetic-type/uint64.svg)](https://david-dm.org/arithmetic-type/uint64)\n[![Dev dependencies](https://img.shields.io/david/dev/arithmetic-type/uint64.svg)](https://david-dm.org/arithmetic-type/uint64?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/arithmetic-type/uint64.svg)](https://github.com/arithmetic-type/uint64/issues)\n[![Downloads](https://img.shields.io/npm/dm/@arithmetic-type/uint64.svg)](https://www.npmjs.org/package/@arithmetic-type/uint64)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/arithmetic-type/uint64.svg)](https://codeclimate.com/github/arithmetic-type/uint64/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/arithmetic-type/uint64.svg)](https://codeclimate.com/github/arithmetic-type/uint64/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/arithmetic-type/uint64/main.svg)](https://codecov.io/gh/arithmetic-type/uint64)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/arithmetic-type/uint64.svg)](https://codeclimate.com/github/arithmetic-type/uint64/trends/technical_debt)\n[![Documentation](https://arithmetic-type.github.io/uint64/badge.svg)](https://arithmetic-type.github.io/uint64/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@arithmetic-type/uint64)](https://bundlephobia.com/result?p=@arithmetic-type/uint64)\n",
+    "longname": "/home/runner/work/uint64/uint64/README.md",
     "name": "./README.md",
     "static": true,
     "access": "public"
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@aureooms/js-uint64\",\n  \"description\": \"64-bit unsigned integer arithmetic and locic operators for JavaScript\",\n  \"version\": \"3.1.0\",\n  \"author\": \"Aurélien Ooms <aurelien.ooms@gmail.com>\",\n  \"ava\": {\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"presets\": [\n      \"@babel/preset-env\"\n    ],\n    \"env\": {\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ],\n        \"sourceMaps\": \"inline\"\n      },\n      \"development\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ],\n        \"sourceMaps\": \"inline\"\n      },\n      \"production\": {\n        \"plugins\": [\n          \"babel-plugin-unassert\",\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ],\n        \"sourceMaps\": \"inline\"\n      }\n    }\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/aureooms/js-uint64/issues\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/cli\": \"7.12.8\",\n    \"@babel/core\": \"7.12.9\",\n    \"@babel/preset-env\": \"7.12.7\",\n    \"@babel/register\": \"7.12.1\",\n    \"ava\": \"3.13.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"np\": \"7.0.0\",\n    \"nyc\": \"15.1.0\",\n    \"power-assert\": \"1.6.1\"\n  },\n  \"files\": [\n    \"lib\"\n  ],\n  \"homepage\": \"http://aureooms.github.io/js-uint64/\",\n  \"keywords\": [\n    \"64\",\n    \"arithmetic\",\n    \"bit\",\n    \"integer\",\n    \"javascript\",\n    \"logic\",\n    \"uint64\",\n    \"unsigned\"\n  ],\n  \"license\": \"AGPL-3.0\",\n  \"main\": \"lib/index.js\",\n  \"repository\": {\n    \"url\": \"https://github.com/aureooms/js-uint64.git\",\n    \"type\": \"git\"\n  },\n  \"scripts\": {\n    \"build\": \"babel src -d lib\",\n    \"cover\": \"nyc --reporter=lcov npm test\",\n    \"dev\": \"npm run lint -- --fix && npm run cover -- -- -st --fail-fast\",\n    \"esdoc\": \"esdoc\",\n    \"lint\": \"true\",\n    \"prepare\": \"npm run build\",\n    \"release\": \"np\",\n    \"test\": \"ava\",\n    \"travis\": \"npm run lint && npm run cover\"\n  },\n  \"sideEffects\": false\n}\n",
-    "longname": "/home/aureooms/dev/js/js-uint64/package.json",
+    "content": "{\n  \"name\": \"@arithmetic-type/uint64\",\n  \"description\": \"64-bit unsigned integer arithmetic and locic operators for JavaScript\",\n  \"version\": \"4.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"make-github-pseudonymous-again\",\n  \"homepage\": \"https://arithmetic-type.github.io/uint64\",\n  \"repository\": {\n    \"url\": \"https://github.com/arithmetic-type/uint64\",\n    \"type\": \"git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/arithmetic-type/uint64/issues\"\n  },\n  \"keywords\": [\n    \"64\",\n    \"arithmetic\",\n    \"bit\",\n    \"integer\",\n    \"javascript\",\n    \"logic\",\n    \"uint64\",\n    \"unsigned\"\n  ],\n  \"sideEffects\": false,\n  \"type\": \"module\",\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.cjs\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.cjs\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:build\": \"npm run build\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/core\": \"7.13.10\",\n    \"@babel/preset-env\": \"7.13.10\",\n    \"@babel/register\": \"7.13.8\",\n    \"@commitlint/cli\": \"12.1.4\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.7.3\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"7.0.1\",\n    \"lint-staged\": \"11.0.1\",\n    \"microbundle\": \"0.13.1\",\n    \"np\": \"7.4.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"xo\": \"0.41.0\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": \"off\",\n      \"camelcase\": \"off\",\n      \"unicorn/prevent-abbreviations\": \"off\",\n      \"no-constant-condition\": \"off\",\n      \"unicorn/prefer-math-trunc\": \"off\",\n      \"unicorn/no-new-array\": \"off\",\n      \"no-negated-condition\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/uint64/uint64/package.json",
     "name": "package.json",
     "static": true,
     "access": "public"
@@ -1316,7 +1221,7 @@
   },
   {
     "kind": "manual",
-    "longname": "/home/aureooms/dev/js/js-uint64/doc/manual/overview.md",
+    "longname": "/home/runner/work/uint64/uint64/doc/manual/overview.md",
     "name": "./doc/manual/overview.md",
     "content": "# Overview\n",
     "static": true,
@@ -1324,23 +1229,23 @@
   },
   {
     "kind": "manual",
-    "longname": "/home/aureooms/dev/js/js-uint64/doc/manual/installation.md",
+    "longname": "/home/runner/work/uint64/uint64/doc/manual/installation.md",
     "name": "./doc/manual/installation.md",
-    "content": "# Installation\n\nCan be managed using\n[jspm](http://jspm.io)\nor [npm](https://github.com/npm/npm).\n\n### jspm\n```terminal\njspm install npm:@aureooms/js-uint64\n```\n\n### npm\n```terminal\nnpm install @aureooms/js-uint64 --save\n```\n",
+    "content": "# Installation\n\nCan be managed using\n[jspm](http://jspm.io)\nor [npm](https://github.com/npm/npm).\n\n### jspm\n```terminal\njspm install npm:@arithmetic-type/uint64\n```\n\n### npm\n```terminal\nnpm install @arithmetic-type/uint64 --save\n```\n",
     "static": true,
     "access": "public"
   },
   {
     "kind": "manual",
-    "longname": "/home/aureooms/dev/js/js-uint64/doc/manual/usage.md",
+    "longname": "/home/runner/work/uint64/uint64/doc/manual/usage.md",
     "name": "./doc/manual/usage.md",
-    "content": "# Usage\n\nThe code needs a ES2015+ polyfill to work, for example\n[regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).\n```js\nrequire( 'regenerator-runtime/runtime' ) ;\n// or\nimport 'regenerator-runtime/runtime' ;\n```\n\nThen\n```js\nconst uint64 = require( '@aureooms/js-uint64' ) ;\n// or\nimport * as uint64 from '@aureooms/js-uint64' ;\n```\n",
+    "content": "# Usage\n\nThe code needs a ES2015+ polyfill to work, for example\n[regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).\n```js\nawait import( 'regenerator-runtime/runtime.js' ) ;\n// or\nimport 'regenerator-runtime/runtime.js' ;\n```\n\nThen\n```js\nconst uint64 = await import( '@arithmetic-type/uint64' ) ;\n// or\nimport * as uint64 from '@arithmetic-type/uint64' ;\n```\n",
     "static": true,
     "access": "public"
   },
   {
     "kind": "manual",
-    "longname": "/home/aureooms/dev/js/js-uint64/doc/manual/example.md",
+    "longname": "/home/runner/work/uint64/uint64/doc/manual/example.md",
     "name": "./doc/manual/example.md",
     "content": "# Example\n",
     "static": true,

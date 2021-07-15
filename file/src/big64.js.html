@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">src/big64.js | @aureooms/js-uint64</title>
+  <title data-ice="title">src/big64.js | @arithmetic-type/uint64</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<script src="./inject/script/0-header.js"></script><link rel="stylesheet" href="./inject/css/0-style.css"><meta name="description" content="64-bit unsigned integer arithmetic and locic operators for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@aureooms/js-uint64"><meta property="twitter:description" content="64-bit unsigned integer arithmetic and locic operators for JavaScript"></head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="64-bit unsigned integer arithmetic and locic operators for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@arithmetic-type/uint64"><meta property="twitter:description" content="64-bit unsigned integer arithmetic and locic operators for JavaScript"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/aureooms/js-uint64.git"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/arithmetic-type/uint64"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -34,7 +34,6 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-big64">big64</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compare">compare</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-get64">get64</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mul3264">mul3264</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mul64">mul64</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-not64">not64</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rotl64">rotl64</a></span></span></li>
@@ -42,8 +41,6 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-shl64">shl64</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-shr64">shr64</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-xor64">xor64</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-max">max</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-min">min</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -56,11 +53,11 @@
  * @param {Number} o Offset in the input array.
  * @returns {Array} The 64-bit integer.
  */
-export function big64 (a, o) {
+export function big64(a, o) {
 	return [
 		(a[o + 0] &lt;&lt; 24) | (a[o + 1] &lt;&lt; 16) | (a[o + 2] &lt;&lt; 8) | a[o + 3],
-		(a[o + 4] &lt;&lt; 24) | (a[o + 5] &lt;&lt; 16) | (a[o + 6] &lt;&lt; 8) | a[o + 7]
-	] ;
+		(a[o + 4] &lt;&lt; 24) | (a[o + 5] &lt;&lt; 16) | (a[o + 6] &lt;&lt; 8) | a[o + 7],
+	];
 }
 </code></pre>
 

@@ -1,7 +1,7 @@
 {
-  "coverage": "60%",
-  "expectCount": 15,
-  "actualCount": 9,
+  "coverage": "50%",
+  "expectCount": 12,
+  "actualCount": 6,
   "files": {
     "src/add64.js": {
       "expectCount": 1,
@@ -26,7 +26,7 @@
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        2
+        1
       ]
     },
     "src/get64.js": {
@@ -35,16 +35,6 @@
       "undocumentLines": [
         1
       ]
-    },
-    "src/limits.js": {
-      "expectCount": 2,
-      "actualCount": 2,
-      "undocumentLines": []
-    },
-    "src/mul3264.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
     },
     "src/mul64.js": {
       "expectCount": 1,

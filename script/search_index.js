@@ -1,92 +1,74 @@
 window.esdocSearchIndex = [
   [
-    "@aureooms/js-uint64/src/add64.js~add64",
+    "@arithmetic-type/uint64/src/add64.js~add64",
     "function/index.html#static-function-add64",
-    "<span>add64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/add64.js</span>",
+    "<span>add64</span> <span class=\"search-result-import-path\">@arithmetic-type/uint64/src/add64.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-uint64/src/and64.js~and64",
+    "@arithmetic-type/uint64/src/and64.js~and64",
     "function/index.html#static-function-and64",
-    "<span>and64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/and64.js</span>",
+    "<span>and64</span> <span class=\"search-result-import-path\">@arithmetic-type/uint64/src/and64.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-uint64/src/big64.js~big64",
+    "@arithmetic-type/uint64/src/big64.js~big64",
     "function/index.html#static-function-big64",
-    "<span>big64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/big64.js</span>",
+    "<span>big64</span> <span class=\"search-result-import-path\">@arithmetic-type/uint64/src/big64.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-uint64/src/compare.js~compare",
+    "@arithmetic-type/uint64/src/compare.js~compare",
     "function/index.html#static-function-compare",
-    "<span>compare</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/compare.js</span>",
+    "<span>compare</span> <span class=\"search-result-import-path\">@arithmetic-type/uint64/src/compare.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-uint64/src/get64.js~get64",
+    "@arithmetic-type/uint64/src/get64.js~get64",
     "function/index.html#static-function-get64",
-    "<span>get64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/get64.js</span>",
+    "<span>get64</span> <span class=\"search-result-import-path\">@arithmetic-type/uint64/src/get64.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-uint64/src/limits.js~max",
-    "variable/index.html#static-variable-max",
-    "<span>max</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/limits.js</span>",
-    "variable"
-  ],
-  [
-    "@aureooms/js-uint64/src/limits.js~min",
-    "variable/index.html#static-variable-min",
-    "<span>min</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/limits.js</span>",
-    "variable"
-  ],
-  [
-    "@aureooms/js-uint64/src/mul3264.js~mul3264",
-    "function/index.html#static-function-mul3264",
-    "<span>mul3264</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/mul3264.js</span>",
-    "function"
-  ],
-  [
-    "@aureooms/js-uint64/src/mul64.js~mul64",
+    "@arithmetic-type/uint64/src/mul64.js~mul64",
     "function/index.html#static-function-mul64",
-    "<span>mul64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/mul64.js</span>",
+    "<span>mul64</span> <span class=\"search-result-import-path\">@arithmetic-type/uint64/src/mul64.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-uint64/src/not64.js~not64",
+    "@arithmetic-type/uint64/src/not64.js~not64",
     "function/index.html#static-function-not64",
-    "<span>not64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/not64.js</span>",
+    "<span>not64</span> <span class=\"search-result-import-path\">@arithmetic-type/uint64/src/not64.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-uint64/src/rotl64.js~rotl64",
+    "@arithmetic-type/uint64/src/rotl64.js~rotl64",
     "function/index.html#static-function-rotl64",
-    "<span>rotl64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/rotl64.js</span>",
+    "<span>rotl64</span> <span class=\"search-result-import-path\">@arithmetic-type/uint64/src/rotl64.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-uint64/src/rotr64.js~rotr64",
+    "@arithmetic-type/uint64/src/rotr64.js~rotr64",
     "function/index.html#static-function-rotr64",
-    "<span>rotr64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/rotr64.js</span>",
+    "<span>rotr64</span> <span class=\"search-result-import-path\">@arithmetic-type/uint64/src/rotr64.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-uint64/src/shl64.js~shl64",
+    "@arithmetic-type/uint64/src/shl64.js~shl64",
     "function/index.html#static-function-shl64",
-    "<span>shl64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/shl64.js</span>",
+    "<span>shl64</span> <span class=\"search-result-import-path\">@arithmetic-type/uint64/src/shl64.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-uint64/src/shr64.js~shr64",
+    "@arithmetic-type/uint64/src/shr64.js~shr64",
     "function/index.html#static-function-shr64",
-    "<span>shr64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/shr64.js</span>",
+    "<span>shr64</span> <span class=\"search-result-import-path\">@arithmetic-type/uint64/src/shr64.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-uint64/src/xor64.js~xor64",
+    "@arithmetic-type/uint64/src/xor64.js~xor64",
     "function/index.html#static-function-xor64",
-    "<span>xor64</span> <span class=\"search-result-import-path\">@aureooms/js-uint64/src/xor64.js</span>",
+    "<span>xor64</span> <span class=\"search-result-import-path\">@arithmetic-type/uint64/src/xor64.js</span>",
     "function"
   ],
   [
@@ -405,18 +387,6 @@ window.esdocSearchIndex = [
     "src/index.js",
     "file/src/index.js.html",
     "src/index.js",
-    "file"
-  ],
-  [
-    "src/limits.js",
-    "file/src/limits.js.html",
-    "src/limits.js",
-    "file"
-  ],
-  [
-    "src/mul3264.js",
-    "file/src/mul3264.js.html",
-    "src/mul3264.js",
     "file"
   ],
   [
