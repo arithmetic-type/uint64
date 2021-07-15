@@ -1,5 +1,5 @@
-import {add64} from './add64';
-import {mul3264} from './mul3264';
+import {add64} from './add64.js';
+import {mul3264} from './mul3264.js';
 
 /**
  * Multiplies two uint64 into one uint64.

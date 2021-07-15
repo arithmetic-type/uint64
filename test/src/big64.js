@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import { big64 , get64 } from '../../src' ;
+import { big64 , get64 } from '../../src/index.js' ;
 
 function macro (t, a, o, expected) {
 	expected = get64(...expected);

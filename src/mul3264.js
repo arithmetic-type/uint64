@@ -1,4 +1,4 @@
-import {add64} from './add64';
+import {add64} from './add64.js';
 
 /**
  * Multiplies two uint32 into one uint64.

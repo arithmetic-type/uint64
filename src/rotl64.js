@@ -1,4 +1,4 @@
-import { rotr64 } from './rotr64' ;
+import { rotr64 } from './rotr64.js' ;
 /**
  * Left rotate a 64-bit unsigned integer given as a pair of two 32-bit signed
  * integers in big endian order.

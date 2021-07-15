@@ -1,4 +1,4 @@
-import { get64 } from './get64' ;
+import { get64 } from './get64.js' ;
 
 /** 0 */
 export const min = get64( 0x00000000 , 0x00000000 ) ;
