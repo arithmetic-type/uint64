@@ -87,7 +87,7 @@
     "np": "7.6.0",
     "pinst": "2.1.6",
     "power-assert": "1.6.1",
-    "xo": "0.44.0"
+    "xo": "0.47.0"
   },
   "ava": {
     "files": [
@@ -205,6 +205,7 @@
       "camelcase": "off",
       "unicorn/prevent-abbreviations": "off",
       "no-constant-condition": "off",
+      "no-bitwise": "off",
       "unicorn/prefer-math-trunc": "off",
       "unicorn/no-new-array": "off",
       "no-negated-condition": "off",
