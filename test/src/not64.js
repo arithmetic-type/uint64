@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import {not64, get64} from '../../src/index.js';
+import {not64, get64} from '#module';
 
 function macro(t, input, expected) {
 	input = get64(...input);

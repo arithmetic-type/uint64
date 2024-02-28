@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import {min, max, get64} from '../../src/index.js';
+import {min, max, get64} from '#module';
 
 function macro(t, input, expected) {
 	const b = get64(...expected);
