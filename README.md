@@ -17,7 +17,7 @@ add64(x, x); // [-1, -2]
 
 [![License](https://img.shields.io/github/license/arithmetic-type/uint64.svg)](https://raw.githubusercontent.com/arithmetic-type/uint64/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@arithmetic-type/uint64.svg)](https://www.npmjs.org/package/@arithmetic-type/uint64)
-[![Tests](https://img.shields.io/github/workflow/status/arithmetic-type/uint64/ci?event=push&label=tests)](https://github.com/arithmetic-type/uint64/actions/workflows/ci.yml?query=branch:main)
+[![Tests](https://img.shields.io/github/actions/workflow/status/arithmetic-type/uint64/ci.yml?branch=main&event=push&label=tests)](https://github.com/arithmetic-type/uint64/actions/workflows/ci.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/librariesio/github/arithmetic-type/uint64.svg)](https://github.com/arithmetic-type/uint64/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/arithmetic-type/uint64.svg)](https://github.com/arithmetic-type/uint64/issues)
 [![Downloads](https://img.shields.io/npm/dm/@arithmetic-type/uint64.svg)](https://www.npmjs.org/package/@arithmetic-type/uint64)
