@@ -75,7 +75,7 @@
   "devDependencies": {
     "@babel/core": "7.23.9",
     "@babel/preset-env": "7.23.9",
-    "@commitlint/cli": "19.0.1",
+    "@commitlint/cli": "19.0.3",
     "@js-library/commitlint-config": "0.0.4",
     "@node-loader/babel": "2.0.1",
     "@node-loader/core": "2.0.0",
